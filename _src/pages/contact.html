@@ -1,0 +1,144 @@
+<section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span aria-hidden="true">/</span>
+        <span class="current" aria-current="page">Contact</span>
+      </nav>
+      <div class="hero-badge">CONTACT</div>
+      <h1 class="page-title">Contact us &amp; book a consultation.</h1>
+      <p class="page-subtitle">
+        Talk directly with our engineers about your roadmap, architecture and timeline. Call, WhatsApp, email or send the form — we reply within 24 hours.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact & Form Section -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Direct Channels Column -->
+        <div class="contact-info-col">
+          <div class="section-badge">GET IN TOUCH</div>
+          <h2 class="contact-heading">Talk to an engineer</h2>
+          <p class="contact-subtext">No sales gatekeepers. We respond within 24 hours.</p>
+
+          <div class="contact-cards" id="contactChannelsContainer">
+            <!-- Populated by main.js -->
+          </div>
+
+          <!-- Engagement Models -->
+          <div class="glass-card engagement-card">
+            <h3>Engagement models</h3>
+            <ul class="engagement-list">
+              <li><span><strong>Fixed-scope delivery:</strong> architecture, design, and build with fixed deliverables.</span></li>
+              <li><span><strong>Dedicated engineering pod:</strong> a senior squad embedded in your sprints.</span></li>
+              <li><span><strong>Architecture review:</strong> code audits, security analysis, and scaling roadmaps.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Consultation Form Column -->
+        <div class="contact-form-col">
+          <div class="glass-card contact-form-card">
+            <h3 class="form-title">Tell us about your project</h3>
+            <p class="form-desc">We'll reply within 24 business hours.</p>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              <!-- Spam trap: hidden from people, filled in by bots; api/contact.php discards those. -->
+              <div class="hp-field" aria-hidden="true"><label>Leave this field empty <input type="text" name="website" tabindex="-1" autocomplete="off" /></label></div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="clientName" class="form-label">Your Full Name <span class="required">*</span></label>
+                  <input type="text" id="clientName" name="clientName" class="form-input" placeholder="e.g. Alex Morgan" autocomplete="name" maxlength="60" required />
+                  <span class="form-error" id="clientNameError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="clientCompany" class="form-label">Company / Organization <span class="required">*</span></label>
+                  <input type="text" id="clientCompany" name="clientCompany" class="form-input" placeholder="e.g. Acme Corp" autocomplete="organization" maxlength="80" required />
+                  <span class="form-error" id="clientCompanyError"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="clientEmail" class="form-label">Work Email <span class="required">*</span></label>
+                  <input type="email" id="clientEmail" name="clientEmail" class="form-input" placeholder="alex@company.com" autocomplete="email" inputmode="email" maxlength="120" required />
+                  <span class="form-error" id="clientEmailError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="clientPhone" class="form-label">Mobile number <span class="required">*</span></label>
+                  <input type="tel" id="clientPhone" name="clientPhone" class="form-input" placeholder="+91 98765 43210" autocomplete="tel" inputmode="tel" maxlength="20" required />
+                  <span class="form-error" id="clientPhoneError"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="projectScope" class="form-label">Primary Engagement Scope <span class="required">*</span></label>
+                <select id="projectScope" name="projectScope" class="form-select" required>
+                  <option value="" disabled selected>Select primary requirement...</option>
+                  <option value="Custom SaaS Platform Development">Custom SaaS Platform Development</option>
+                  <option value="Headless CMS Architecture & Migration">Headless CMS Architecture & Migration</option>
+                  <option value="Healthcare / FinTech Regulated System">Healthcare / FinTech Regulated System</option>
+                  <option value="High-Throughput Web Application">High-Throughput Web Application</option>
+                  <option value="Legacy Enterprise Modernization">Legacy Enterprise Modernization</option>
+                  <option value="Dedicated Senior Engineering Squad">Dedicated Senior Engineering Squad</option>
+                  <option value="Architecture Code Audit & Optimization">Architecture Code Audit & Optimization</option>
+                </select>
+                <span class="form-error" id="projectScopeError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="projectTimeline" class="form-label">Target Launch Timeline</label>
+                <select id="projectTimeline" name="projectTimeline" class="form-select">
+                  <option value="Immediate (Within 30 Days)">Immediate (Within 30 Days)</option>
+                  <option value="Next Quarter (1-3 Months)" selected>Next Quarter (1-3 Months)</option>
+                  <option value="Flexible / Exploration Phase">Flexible / Exploration Phase</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="projectOverview" class="form-label">Project Overview & Technical Requirements <span class="required">*</span></label>
+                <textarea id="projectOverview" name="projectOverview" class="form-textarea" rows="4" maxlength="2000" placeholder="Briefly describe your platform goals, current tech stack, and key deliverables..." required></textarea>
+                <span class="form-error" id="projectOverviewError"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full" id="contactSubmitBtn">
+                <span>Submit Consultation Request</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+
+              <div class="form-status" id="formStatus"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="office">
+    <div class="container">
+      <div class="info-grid">
+        <div class="card">
+          <h2 class="card-heading">Our office</h2>
+          <address style="font-style:normal;line-height:1.8;color:var(--text-2)">
+            <strong style="color:var(--text)">Thinkvistar LLP</strong><br />
+            Yashwant Gaurav Phase 1, Nalasopara West<br />
+            Palghar, Maharashtra 401203, India<br />
+            Phone &amp; WhatsApp: <a href="tel:+917021067824">+91 70210 67824</a><br />
+            Email: <a href="mailto:hello@thinkvistar.com">hello@thinkvistar.com</a>
+          </address>
+          <p style="margin-top:12px"><a class="link-arrow" href="https://www.google.com/maps/search/?api=1&amp;query=Yashwant+Gaurav+Phase+1+Nalasopara+West" target="_blank" rel="noopener noreferrer">Open in Google Maps &rarr;</a></p>
+        </div>
+        <div class="card">
+          <h2 class="card-heading">Working with us remotely</h2>
+          <p>Most of our work is remote. Clients across India and in the US, UK and Europe get scheduled calls in overlapping hours, weekly demos on a staging site and written progress updates.</p>
+          <p>Before you get in touch, you can <a href="/estimator/">estimate your project timeline</a> or read about <a href="/services/#engagement">our engagement models</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--FAQ-->

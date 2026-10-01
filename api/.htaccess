@@ -1,0 +1,10 @@
+# Credentials and templates must never be served over HTTP.
+<FilesMatch "^(config|config\.example)\.php$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</FilesMatch>

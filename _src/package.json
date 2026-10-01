@@ -1,0 +1,13 @@
+{
+  "name": "thinkvistar-site-build",
+  "private": true,
+  "type": "module",
+  "description": "Builds the static Thinkvistar website into the repository root.",
+  "scripts": {
+    "build": "node build.mjs",
+    "build:fast": "node build.mjs --no-prerender"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^24.0.0"
+  }
+}

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="logiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="logiCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="640" height="400" rx="12" fill="url(#logiBg)"/>
+
+  <!-- Top Bar -->
+  <rect width="640" height="38" fill="#1e293b" fill-opacity="0.7"/>
+  <line x1="0" y1="38" x2="640" y2="38" stroke="#334155" stroke-width="0.8"/>
+  <circle cx="20" cy="19" r="4.5" fill="#ef4444"/>
+  <circle cx="36" cy="19" r="4.5" fill="#f59e0b"/>
+  <circle cx="52" cy="19" r="4.5" fill="#10b981"/>
+  <rect x="160" y="8" width="320" height="22" rx="5" fill="#0f172a" stroke="#334155" stroke-width="0.75"/>
+  <text x="320" y="23" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">logiops.freight/dispatch/active-fleet-map</text>
+
+  <!-- Left Map & Routing Section (GIS View) -->
+  <g transform="translate(16, 48)">
+    <rect x="0" y="0" width="360" height="336" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1.2"/>
+    
+    <!-- Stylized Map Grid Lines & Roads -->
+    <path d="M 20 60 L 140 120 L 260 80 L 340 160" stroke="#334155" stroke-width="2.5" fill="none"/>
+    <path d="M 60 220 L 160 180 L 280 260 L 340 220" stroke="#334155" stroke-width="2.5" fill="none"/>
+    <path d="M 140 120 L 160 180 L 220 300" stroke="#334155" stroke-width="3" fill="none"/>
+    <path d="M 260 80 L 280 260" stroke="#334155" stroke-width="2" fill="none"/>
+
+    <!-- Active Route Highlight (Cyan Glowing Path) -->
+    <path d="M 60 80 L 140 120 L 160 180 L 280 260" stroke="#06b6d4" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Map Waypoint Nodes -->
+    <circle cx="60" cy="80" r="7" fill="#0f172a" stroke="#10b981" stroke-width="2.5"/>
+    <circle cx="60" cy="80" r="3" fill="#10b981"/>
+    <text x="72" y="84" fill="#34d399" font-family="system-ui, sans-serif" font-size="8.5" font-weight="700">HUB #04 (Depot)</text>
+
+    <circle cx="140" cy="120" r="5" fill="#38bdf8"/>
+    <circle cx="160" cy="180" r="5" fill="#38bdf8"/>
+
+    <!-- Active Fleet Vehicle Marker -->
+    <circle cx="280" cy="260" r="9" fill="#0f172a" stroke="#f59e0b" stroke-width="3"/>
+    <circle cx="280" cy="260" r="4" fill="#f59e0b"/>
+    <rect x="230" y="278" width="100" height="22" rx="4" fill="#0f172a" stroke="#f59e0b" stroke-width="0.8"/>
+    <text x="280" y="292" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="700" text-anchor="middle">TRUCK-18: IN-TRANSIT</text>
+
+    <!-- Map Info Overlay Card -->
+    <rect x="14" y="14" width="150" height="42" rx="6" fill="#090d16" fill-opacity="0.9" stroke="#1e293b" stroke-width="0.8"/>
+    <text x="24" y="30" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="9" font-weight="700">120 Active Vehicles</text>
+    <text x="24" y="44" fill="#34d399" font-family="system-ui, sans-serif" font-size="8" font-weight="600">● 14 Logistics Hubs Online</text>
+  </g>
+
+  <!-- Right Side Dispatch & Barcode Console -->
+  <g transform="translate(388, 48)">
+    <!-- Active Manifest Card -->
+    <rect x="0" y="0" width="236" height="156" rx="10" fill="url(#logiCard)" stroke="#1e293b" stroke-width="1"/>
+    <text x="14" y="24" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Manifest #ORD-8942</text>
+    <rect x="156" y="12" width="66" height="18" rx="4" fill="#065f46" fill-opacity="0.4" stroke="#10b981" stroke-width="0.8"/>
+    <text x="189" y="24" fill="#34d399" font-family="system-ui, sans-serif" font-size="8" font-weight="700" text-anchor="middle">OPTIMIZED</text>
+
+    <!-- Cargo Weight Gauge -->
+    <text x="14" y="52" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8.5" font-weight="600">PAYLOAD CAPACITY (84%)</text>
+    <rect x="14" y="58" width="208" height="10" rx="5" fill="#0f172a"/>
+    <rect x="14" y="58" width="174" height="10" rx="5" fill="#3b82f6"/>
+    <text x="14" y="82" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="9">24,180 / 28,000 lbs (Compliant)</text>
+
+    <!-- Barcode Scan Simulation -->
+    <text x="14" y="106" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8.5" font-weight="600">BARCODE QR VERIFICATION</text>
+    <rect x="14" y="114" width="208" height="28" rx="4" fill="#0f172a" stroke="#334155" stroke-width="0.8"/>
+    <text x="24" y="132" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="8.5">SCAN: [PKG-992-FX-CH] OK</text>
+    <circle cx="206" cy="128" r="4" fill="#10b981"/>
+
+    <!-- Bottom Telemetry Card -->
+    <rect x="0" y="168" width="236" height="168" rx="10" fill="url(#logiCard)" stroke="#1e293b" stroke-width="1"/>
+    <text x="14" y="192" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Warehouse Queue (Real-Time)</text>
+
+    <!-- Queue items -->
+    <rect x="12" y="204" width="212" height="26" rx="5" fill="#0f172a" stroke="#1e293b" stroke-width="0.8"/>
+    <text x="20" y="220" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="8.5">Bay 4 • Pallet #812 • Verified</text>
+    <text x="216" y="220" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="end">READY</text>
+
+    <rect x="12" y="236" width="212" height="26" rx="5" fill="#0f172a" stroke="#1e293b" stroke-width="0.8"/>
+    <text x="20" y="252" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="8.5">Bay 7 • Pallet #813 • Scanning</text>
+    <text x="216" y="252" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="end">QUEUE</text>
+
+    <rect x="12" y="268" width="212" height="26" rx="5" fill="#0f172a" stroke="#1e293b" stroke-width="0.8"/>
+    <text x="20" y="284" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="8.5">Bay 1 • Pallet #814 • Verified</text>
+    <text x="216" y="284" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="end">READY</text>
+
+    <text x="14" y="322" fill="#64748b" font-family="system-ui, sans-serif" font-size="8.5">FastAPI WebSockets • Latency: 8ms</text>
+  </g>
+</svg>
