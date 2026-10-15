@@ -26,9 +26,13 @@ ErrorDocument 404 /404.html
   RewriteRule ^(_src|Fix|changes|vendor|\.git)(/|$) - [R=404,L]
 </IfModule>
 
-<FilesMatch "(\.md|composer\.(json|lock)|package(-lock)?\.json|\.gitignore)$">
+<FilesMatch "(^\.env|^config(\.example)?\.php$|\.md|composer\.(json|lock)|package(-lock)?\.json|\.gitignore)$">
   <IfModule mod_authz_core.c>
     Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
   </IfModule>
 </FilesMatch>
 

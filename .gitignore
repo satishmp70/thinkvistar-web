@@ -8,6 +8,7 @@ dist/vendor/
 
 # Production Configuration & Secrets
 api/config.php
+api/test_env.php
 dist/api/config.php
 dist-ssr/
 build/

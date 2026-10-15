@@ -283,7 +283,8 @@ function buildTextBody(array $rows)
     return implode("\n", $lines);
 }
 
-$subject = $config['subject'] ?? 'New Contact Form Enquiry';
+$baseSubject = $config['subject'] ?? 'New Contact Form Enquiry';
+$subject = ($submittedName !== '') ? $baseSubject . ' from ' . cleanHeader($submittedName) : $baseSubject;
 $htmlBody = buildHtmlBody($rows, $subject);
 $textBody = buildTextBody($rows);
 
@@ -323,6 +324,19 @@ function sendViaSmtp($config, $subject, $htmlBody, $textBody, $replyToEmail, $re
         ? PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS
         : PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_SMTPS;
     $mail->CharSet    = 'UTF-8';
+
+    // Anti-spam deliverability optimizations:
+    // 1. Envelope Sender (Return-Path matches From address for SPF/DMARC alignment)
+    $mail->Sender     = $config['from_email'];
+
+    // 2. Set valid Hostname for Message-ID header (prevents server hostname flags)
+    $fromDomain       = substr(strrchr($config['from_email'], '@'), 1);
+    if (!empty($fromDomain)) {
+        $mail->Hostname = $fromDomain;
+    }
+
+    // 3. Remove PHPMailer signature header so spam scanners don't penalize automated scripts
+    $mail->XMailer    = ' ';
 
     $mail->setFrom($config['from_email'], $config['from_name']);
     $mail->addAddress($config['recipient'], $config['recipient_name'] ?? '');
