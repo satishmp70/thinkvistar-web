@@ -1,0 +1,19 @@
+{
+  "name": "thinkvistar-web",
+  "private": true,
+  "description": "Convenience wrapper: every command runs the matching script in src/ (the real package.json lives there).",
+  "scripts": {
+    "install:src": "npm --prefix src ci",
+    "build": "npm --prefix src run build",
+    "preview": "npm --prefix src run preview",
+    "verify": "npm --prefix src run verify",
+    "check": "npm --prefix src run check",
+    "test": "npm --prefix src test",
+    "test:browser": "npm --prefix src run test:browser",
+    "test:contact": "npm --prefix src run test:contact",
+    "test:indexnow": "npm --prefix src run test:indexnow",
+    "test:lastmod": "npm --prefix src run test:lastmod",
+    "lighthouse": "npm --prefix src run lighthouse",
+    "audit:deps": "npm --prefix src run audit:deps"
+  }
+}

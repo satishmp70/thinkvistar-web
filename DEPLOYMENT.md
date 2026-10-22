@@ -1,84 +1,56 @@
 # Deployment Guide
 
-This project is deployed as a static website with a PHP SMTP mail endpoint.
-Node.js and `node_modules` are not required on the server. Before deploying, run a full build on your computer
-(`cd _src && npm run build`, see README.md) so the HTML, `/assets` and `sitemap.xml` are up to date.
+GitHub Actions builds the site from `src/` + `static/`, runs the SEO and link checks, adds PHPMailer
+(`vendor/`) and publishes the finished files to the **`deploy`** branch. Hostinger pulls that branch into
+`public_html`. The server needs no Node, no Composer and no source code.
 
-## Local Setup
+## One-time switch (in this order, no downtime)
 
-PHP 8.1 or newer and Composer are required for local SMTP mail testing.
+1. Push this work to a branch other than `main` (for example `restructure`).
+2. GitHub → Actions → **build-and-deploy** → *Run workflow* on that branch. It creates the `deploy` branch.
+3. Create `/home/uXXXX/.env` on the server from `.env.example` (outside `public_html`). Use a NEW mailbox password.
+4. Hostinger hPanel → Git → set the branch to `deploy` (directory `public_html`) and deploy.
+5. Check https://thinkvistar.com/ and send one test enquiry from `/contact/`.
+6. Only now merge the branch into `main`. From then on every push to `main` redeploys automatically.
 
-1. From the project root directory, install PHPMailer (if `vendor/` does not already exist):
+If a step fails, point Hostinger back at the old branch; nothing is lost.
 
-```bash
-composer install --no-dev
-```
+## Form endpoint settings (`.env`, outside `public_html`)
 
-2. Ensure `api/config.php` exists (copy from `api/config.example.php` if needed) and configure your SMTP settings.
+- `ALLOWED_ORIGINS`: complete origins allowed to post the form (scheme + host [+ port]), compared exactly. Default: `https://thinkvistar.com` and `https://www.thinkvistar.com`. A staging site must be listed explicitly. Requests without an `Origin` header (older clients, scripts) are still accepted; the field allowlist and rate limit are the abuse controls.
+- `RATE_LIMIT_DIR`: private writable folder for counters. Default: `.thinkvistar-ratelimit` in the hosting home directory, then the system temp folder. If none is writable the form returns HTTP 503 and logs the cause instead of running unlimited.
+- `TRUST_PROXY_HEADERS`: see Troubleshooting.
 
-3. Start the local server:
+The server must run PHP 8.1 or newer.
 
-```bash
-php -S 127.0.0.1:8000
-```
-
-4. Open:
-
-```text
-http://127.0.0.1:8000/contact/
-```
-
-Keep the PHP server running while testing the form. The form submits to `/api/contact.php` on the same server.
-
-## Server Setup
-
-The server does not need Node.js or `node_modules`. You do not need to upload `_src/`
-(it is blocked from the web by `.htaccess` if you do), but make sure the hidden `.htaccess` file in the root **is** uploaded.
-
-1. Open Hostinger File Manager or connect through SFTP.
-2. Open the domain's `public_html/` directory.
-3. Upload the project files directly into `public_html/`.
-4. Upload `api/config.php` separately with the real SMTP password (keep it secure and out of public git repositories).
-
-5. Install PHPMailer on the server:
+## Local PHP test (optional)
 
 ```bash
-cd public_html
-composer install --no-dev --optimize-autoloader
-```
-
-This creates `public_html/vendor/`. Do not commit `vendor/` or `api/config.php` to git.
-
-The server must use PHP 8.1 or newer.
-
-The following paths must exist in `public_html/`:
-
-```text
-public_html/.htaccess
-public_html/index.html
-public_html/404.html
-public_html/about/index.html
-public_html/contact/index.html
-public_html/assets/
-public_html/fonts/
-public_html/images/
-public_html/api/contact.php
-public_html/api/config.php
-public_html/vendor/autoload.php
+cd src && npm ci && npm run build        # creates dist/
+cd .. && composer install --no-dev && cp -r vendor dist/vendor
+cp .env.example .env                     # edit values
+cd dist && php -S 127.0.0.1:8000         # open http://127.0.0.1:8000/contact/
 ```
 
 ## SMTP Configuration
 
-In `public_html/api/config.php`, confirm these values:
+Configuration is read from a `.env` file, not from `api/config.php`. Copy `.env.example`
+to `.env` and fill in the real values. The loader looks in three places, in order:
 
-```php
-'transport' => 'smtp',
-'host' => 'smtp.hostinger.com',
-'username' => 'hello@thinkvistar.com',
-'password' => 'YOUR_MAILBOX_PASSWORD',
-```
+1. `/home/uXXXX/.env` (outside `public_html`, the safest)
+2. `public_html/.env`
+3. `public_html/api/.env`
 
-Keep the password private. Do not place it in frontend JavaScript or public documentation.
+`api/config.php` is committed and only reads
+environment variables, so it contains no secrets and is safe to keep in git.
+Never put the mailbox password in frontend JavaScript or docs.
+
+If an SMTP password has ever been committed or shared, change it in Hostinger and update `.env`.
+
+## Post-deploy checks (run by you, on the live site)
+
+These cannot be run from the repository and are listed separately in `audit-reports/REMEDIATION_STATUS.md`:
+`curl -sI` on `/`, `/contact/`, `/assets/<file>`, `/fonts/<file>` (status, `Cache-Control`, CSP, HSTS, redirects), one real test enquiry, then `node src/indexnow.mjs` once the new version is live (it verifies the key file first and exits non-zero if the notification is rejected).
 
 ## Verification
 
@@ -102,15 +74,16 @@ An existing endpoint returns a JSON `Method not allowed` response for a normal b
 
 - `404` for `/api/contact.php`: upload `api/` directly inside `public_html/`.
 - `PHPMailer is not installed`: upload `vendor/` and confirm `vendor/autoload.php` exists.
-- `Origin not allowed`: confirm the domain (`https://thinkvistar.com`) is listed in `allowed_origins` in `api/config.php`.
+- `Origin not allowed`: confirm the domain (`https://thinkvistar.com`) is listed in `ALLOWED_ORIGINS` in `.env`.
+- Every visitor gets "Too many enquiries": the host proxy hides visitor addresses. Set `TRUST_PROXY_HEADERS=true` in `.env`.
 - SMTP authentication failure: verify the Hostinger mailbox password and SMTP hostname.
 - No message in Inbox: check Spam/Junk and Hostinger mail delivery logs.
 
 ## Domain & search engine setup (thinkvistar.com)
 
 1. Point `thinkvistar.com` and `www.thinkvistar.com` at this hosting and enable SSL (Hostinger → SSL).
-2. Once HTTPS works, uncomment the `Strict-Transport-Security` line in `.htaccess`.
+2. HTTPS is live and `Strict-Transport-Security` is enabled in `.htaccess`.
 3. Google Search Console: add a **Domain property** for `thinkvistar.com` and submit `https://thinkvistar.com/sitemap.xml`.
-4. Bing Webmaster Tools: import the site from Search Console, then run `node _src/indexnow.mjs`.
+4. Bing Webmaster Tools: import the site from Search Console, then run `node src/indexnow.mjs`.
 5. Create or update the **Google Business Profile** with exactly the same name, address and phone as the site footer:
    Thinkvistar LLP, Yashwant Gaurav Phase 1, Nalasopara West, Palghar, Maharashtra 401203 · +91 70210 67824.

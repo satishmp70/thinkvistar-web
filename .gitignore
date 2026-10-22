@@ -7,9 +7,8 @@ dist/vendor/
 .pnp.js
 
 # Production Configuration & Secrets
-api/config.php
 api/test_env.php
-dist/api/config.php
+dist/
 dist-ssr/
 build/
 *.local
@@ -69,5 +68,5 @@ Desktop.ini
 scratch/
 
 # Build tooling
-_src/node_modules/
-_src/screenshots/
+src/node_modules/
+src/screenshots/

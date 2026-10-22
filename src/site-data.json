@@ -1,0 +1,1337 @@
+{
+ "company": {
+  "name": "Thinkvistar",
+  "legalName": "Thinkvistar LLP",
+  "shortName": "Thinkvistar",
+  "tagline": "SaaS, Headless CMS & Custom Software Engineering",
+  "description": "A senior-led engineering studio building SaaS platforms, headless CMS systems, and custom software for companies that need reliability at scale.",
+  "yearFounded": 2026,
+  "capabilities": [
+   "SaaS Platforms",
+   "Headless CMS",
+   "Web Applications",
+   "Mobile Apps",
+   "Custom Software",
+   "Product Design",
+   "Cloud & DevOps",
+   "Real-Time APIs",
+   "AI Automation"
+  ],
+  "stats": [
+   {
+    "value": "24 hrs",
+    "label": "Reply to every enquiry"
+   },
+   {
+    "value": "Weekly",
+    "label": "Demos on a live staging site"
+   },
+   {
+    "value": "100%",
+    "label": "Code & IP ownership on full payment"
+   },
+   {
+    "value": "30 days",
+    "label": "Post-launch defect warranty"
+   }
+  ],
+  "contact": {
+   "email": "hello@thinkvistar.com",
+   "phone": "+91 70210 67824",
+   "whatsapp": "+917021067824",
+   "location": "Nalasopara West, Mumbai Region",
+   "availability": "Available for Q4 2026 engagements",
+   "form": {
+    "endpoint": "/api/contact.php",
+    "subject": "New Contact Form Enquiry"
+   },
+   "address": "Yashwant Gaurav Phase 1, Nalasopara West, Palghar, Maharashtra 401203, India"
+  },
+  "socialLinks": {
+   "linkedin": "https://www.linkedin.com/company/thinkvistar",
+   "x": "https://x.com/thinkvistar",
+   "facebook": "https://www.facebook.com/profile.php?id=61594652131246",
+   "instagram": "https://www.instagram.com/thinkvistar/"
+  },
+  "seo": {
+   "siteUrl": "https://thinkvistar.com",
+   "ogImage": "/images/og/thinkvistar-og.png",
+   "keywords": "Thinkvistar, SaaS development, custom software engineering, headless CMS, enterprise web applications, B2B software studio"
+  }
+ },
+ "navigation": {
+  "brand": {
+   "name": "Thinkvistar",
+   "shortName": "Thinkvistar",
+   "logo": "/images/logo/thinkvistar-logo.webp"
+  },
+  "links": [
+   {
+    "label": "About",
+    "href": "/about/"
+   },
+   {
+    "label": "Services",
+    "href": "/services/"
+   },
+   {
+    "label": "Stack",
+    "href": "/tech-stack/"
+   },
+   {
+    "label": "Work",
+    "href": "/projects/"
+   },
+   {
+    "label": "Estimator",
+    "href": "/estimator/"
+   },
+   {
+    "label": "Contact",
+    "href": "/contact/"
+   }
+  ],
+  "ctaButton": {
+   "label": "Book a Consultation",
+   "href": "/contact/"
+  }
+ },
+ "hero": {
+  "badge": "SOFTWARE ENGINEERING STUDIO",
+  "headline": "Custom software & SaaS development. Built to scale with your business.",
+  "subtext": "We design, build and support SaaS platforms, web and mobile apps, headless CMS websites and AI automation — senior engineers from architecture to launch, for teams in India and worldwide.",
+  "ctaPrimary": {
+   "label": "Book a Consultation",
+   "href": "/contact/"
+  },
+  "ctaSecondary": {
+   "label": "See Our Work",
+   "href": "/projects/"
+  },
+  "trustPills": [
+   "SaaS Platforms",
+   "Headless CMS",
+   "Legacy Modernization",
+   "AI & Automation"
+  ]
+ },
+ "marqueeTechnologies": [
+  {
+   "name": "React",
+   "logo": "react",
+   "category": "Frontend"
+  },
+  {
+   "name": "Next.js",
+   "logo": "nextdotjs",
+   "category": "Framework"
+  },
+  {
+   "name": "Node.js",
+   "logo": "nodedotjs",
+   "category": "Backend"
+  },
+  {
+   "name": "Vercel",
+   "logo": "vercel",
+   "category": "Edge Cloud"
+  },
+  {
+   "name": "Firebase",
+   "logo": "firebase",
+   "category": "Cloud Backend"
+  },
+  {
+   "name": "AWS",
+   "icon": "aws",
+   "category": "Infrastructure"
+  },
+  {
+   "name": "MongoDB",
+   "logo": "mongodb",
+   "category": "Database"
+  },
+  {
+   "name": "TypeScript",
+   "logo": "typescript",
+   "category": "Language"
+  },
+  {
+   "name": "GraphQL",
+   "logo": "graphql",
+   "category": "API"
+  },
+  {
+   "name": "PostgreSQL",
+   "logo": "postgresql",
+   "category": "Database"
+  },
+  {
+   "name": "Docker",
+   "logo": "docker",
+   "category": "Containers"
+  },
+  {
+   "name": "Tailwind CSS",
+   "logo": "tailwindcss",
+   "category": "Styling"
+  }
+ ],
+ "services": [
+  {
+   "id": "custom-saas",
+   "url": "/services/saas-development/",
+   "icon": "saas",
+   "title": "Custom SaaS Development",
+   "description": "Multi-tenant platforms with billing, analytics, and role-based access built in.",
+   "deliverables": [
+    "Multi-tenant architecture & RBAC",
+    "Stripe / Paddle billing",
+    "Real-time analytics",
+    "Cloud microservices"
+   ],
+   "longDescription": "We build subscription software products end to end: tenant isolation, user roles, subscription billing, admin dashboards, usage analytics and the APIs your customers integrate with — designed so the first version can grow without a rewrite.",
+   "bestFor": "Founders launching a SaaS MVP, and companies turning an internal tool into a product",
+   "timeline": "4–6 weeks for a focused MVP; 8–12+ weeks for larger platforms"
+  },
+  {
+   "id": "headless-cms",
+   "url": "/services/headless-cms-development/",
+   "icon": "cms",
+   "title": "Headless CMS Architecture",
+   "description": "Decoupled content platforms for fast, omnichannel publishing.",
+   "deliverables": [
+    "Contentful, Strapi & Sanity setup",
+    "Live preview & editorial workflows",
+    "Multilingual content",
+    "GraphQL / REST content APIs"
+   ],
+   "longDescription": "We move marketing sites and content-heavy platforms to a headless CMS such as Strapi, Contentful or Sanity, with a fast Next.js front end, editor-friendly workflows and live preview — so your team publishes without developers and pages load quickly.",
+   "bestFor": "Marketing teams outgrowing WordPress, and multi-language or multi-site brands",
+   "timeline": "3–5 weeks for a standard site; longer with large content migrations"
+  },
+  {
+   "id": "legacy-modernization",
+   "url": "/services/legacy-application-modernization/",
+   "icon": "code",
+   "title": "Legacy Modernization",
+   "description": "Move monolithic systems to modern cloud architectures with validated, reconciled data migration.",
+   "deliverables": [
+    "Monolith to microservices",
+    "Data migration & schema cleanup",
+    "Staged cutover with a rollback plan",
+    "CI/CD & containerization"
+   ],
+   "longDescription": "We modernize ageing applications in stages: assess the current system, stabilise it, then migrate modules and data to a modern, containerised architecture behind the scenes — keeping the business running throughout instead of a risky big-bang rewrite.",
+   "bestFor": "Businesses running on old PHP, .NET or desktop systems that have become hard to change",
+   "timeline": "6–8 weeks for a first modernised module; larger programmes run in phases"
+  },
+  {
+   "id": "ai-automation",
+   "url": "/services/ai-automation/",
+   "icon": "cpu",
+   "title": "AI & Automation",
+   "description": "LLMs, vector search, and event pipelines that remove manual work from operations.",
+   "deliverables": [
+    "LLM & vector search integration",
+    "Document automation",
+    "Event queues (Kafka / Redis)",
+    "Workflow agents"
+   ],
+   "longDescription": "We connect large language models and automation to your real workflows: document extraction, support and sales assistants grounded in your own data, and event-driven pipelines that remove repetitive manual work — with human review where accuracy matters.",
+   "bestFor": "Operations, support and back-office teams handling repetitive documents or requests",
+   "timeline": "5–7 weeks for a first production workflow"
+  },
+  {
+   "id": "web-app-development",
+   "url": "/services/web-application-development/",
+   "icon": "web",
+   "title": "High-Performance Web Apps",
+   "description": "Fast, accessible web and progressive apps with edge rendering.",
+   "deliverables": [
+    "Customer portals & dashboards",
+    "Booking & workflow systems",
+    "Offline & real-time sync",
+    "Core Web Vitals performance budgets"
+   ],
+   "longDescription": "We build fast, accessible web applications and progressive web apps — customer portals, booking systems, dashboards and internal tools — with modern rendering, offline support where needed, and Core Web Vitals treated as a requirement, not an afterthought.",
+   "bestFor": "Businesses that need a customer portal, booking system, dashboard or internal tool",
+   "timeline": "4–8 weeks for a first release, depending on integrations"
+  },
+  {
+   "id": "mobile-app-development",
+   "url": "/services/mobile-app-development/",
+   "icon": "mobile",
+   "title": "Mobile App Development",
+   "description": "Native-quality iOS and Android apps from a single, well-tested codebase.",
+   "deliverables": [
+    "iOS & Android apps (React Native / Flutter)",
+    "Push notifications & offline mode",
+    "Payments, maps & device integrations",
+    "App Store & Play Store launch"
+   ],
+   "longDescription": "We design and build mobile apps for iOS and Android — customer apps, field-staff tools and companion apps for your web platform — using cross-platform frameworks for one maintainable codebase, backed by secure APIs, and taken all the way through App Store and Play Store review.",
+   "bestFor": "Businesses launching a customer-facing app, or giving field teams a mobile tool that works offline",
+   "timeline": "6–10 weeks for a first release on both stores"
+  },
+  {
+   "id": "maintenance-support",
+   "url": "/services/cloud-support-maintenance/",
+   "icon": "support",
+   "title": "Cloud Support & Maintenance",
+   "description": "Monitoring, security patching and support after launch, under an agreed service plan.",
+   "deliverables": [
+    "Uptime monitoring & alerting",
+    "Security patching & backups",
+    "Docker & Kubernetes operations",
+    "Agreed response times (SLA)"
+   ],
+   "longDescription": "After launch we keep your software healthy: uptime monitoring and alerting, security patching, backups and disaster-recovery drills, cloud cost reviews and a steady stream of improvements — under a support plan with agreed response times.",
+   "bestFor": "Teams without in-house DevOps, and products that must stay online",
+   "timeline": "Monthly plans; onboarding in about 1–2 weeks"
+  }
+ ],
+ "industries": {
+  "badge": "INDUSTRIES",
+  "title": "Built for any industry",
+  "intro": "Our services apply to every sector. These are the industries we build for most often — if yours is not listed, the same engineering practices still apply.",
+  "list": [
+   "Healthcare",
+   "FinTech & Banking",
+   "E-Commerce & Retail",
+   "Logistics & Supply Chain",
+   "Real Estate & PropTech",
+   "B2B SaaS",
+   "Education & EdTech",
+   "Manufacturing",
+   "Hospitality & Travel",
+   "Media & Publishing",
+   "Legal & Professional Services",
+   "Insurance",
+   "Automotive",
+   "Energy & Utilities",
+   "Agriculture",
+   "Non-profit & NGOs",
+   "Government & Public Sector",
+   "Startups & MSMEs"
+  ],
+  "note": "Don’t see your industry? Every engagement starts with understanding how your business works."
+ },
+ "projectCategories": [
+  "All",
+  "SaaS",
+  "CMS",
+  "Web App",
+  "Custom Software"
+ ],
+ "projects": [
+  {
+   "id": "cloudmetrics-saas-platform",
+   "isPlaceholder": true,
+   "badge": "SaaS Platform",
+   "title": "CloudMetrics",
+   "category": "SaaS",
+   "clientType": "Solution blueprint · Usage-based SaaS",
+   "description": "How we would build real-time telemetry and automated usage-based billing for a multi-tenant SaaS product.",
+   "image": "/images/projects/project-saas.svg",
+   "technologies": [
+    "React",
+    "TypeScript",
+    "Node.js",
+    "PostgreSQL",
+    "TimescaleDB",
+    "Redis",
+    "Stripe"
+   ],
+   "url": "#projects",
+   "caseStudyUrl": "/case-study/?id=cloudmetrics-saas-platform",
+   "featured": true,
+   "caseStudy": {
+    "headline": "Blueprint: real-time telemetry and automated usage-based billing for a multi-tenant SaaS",
+    "overview": "A SaaS vendor needs to ingest thousands of metric events per second, calculate usage tiers live and reconcile monthly billing across hundreds of tenants. This blueprint shows the architecture and delivery plan we use for this class of problem.",
+    "clientOverview": "Typical fit: an infrastructure or analytics SaaS company that bills customers by usage.",
+    "challenge": "Batch processing causes hours of data delay, billing discrepancies and slow dashboards at peak traffic.",
+    "solution": "An event-driven pipeline on Redis Streams, time-partitioned PostgreSQL (TimescaleDB) storage and a live WebSocket dashboard, with usage tiers synced to Stripe invoicing.",
+    "keyFeatures": [
+     "Live telemetry charts with low-latency updates (design target: under 100 ms)",
+     "Automated usage tiers synced to Stripe invoicing",
+     "Multi-tenant roles, permissions & audit logs"
+    ],
+    "developmentProcess": [
+     {
+      "phase": "01 Discovery",
+      "detail": "Map the time-series schema, retention and indexing strategy."
+     },
+     {
+      "phase": "02 Ingestion",
+      "detail": "Build rate-limited streaming services with back-pressure."
+     },
+     {
+      "phase": "03 Dashboard",
+      "detail": "Virtualised tables and live charts for large tenants."
+     },
+     {
+      "phase": "04 Launch",
+      "detail": "Load-test beyond the expected peak before rollout."
+     }
+    ],
+    "architectureNotes": "Edge-hosted Next.js frontend backed by TimescaleDB, Redis, and PostgreSQL microservices.",
+    "results": [
+     {
+      "metric": "< 100 ms",
+      "label": "Target query latency"
+     },
+     {
+      "metric": "99.9%+",
+      "label": "Target platform uptime"
+     },
+     {
+      "metric": "Automated",
+      "label": "Usage-to-invoice reconciliation"
+     }
+    ]
+   }
+  },
+  {
+   "id": "omnipress-headless-cms",
+   "isPlaceholder": true,
+   "badge": "Headless CMS",
+   "title": "OmniPress",
+   "category": "CMS",
+   "clientType": "Solution blueprint · Multi-site publishing",
+   "description": "How we would unify several websites and editorial teams on one headless content platform.",
+   "image": "/images/projects/project-cms.svg",
+   "technologies": [
+    "Next.js",
+    "TypeScript",
+    "Strapi",
+    "GraphQL",
+    "AWS S3",
+    "CloudFront"
+   ],
+   "url": "#projects",
+   "caseStudyUrl": "/case-study/?id=omnipress-headless-cms",
+   "featured": true,
+   "caseStudy": {
+    "headline": "Blueprint: one multilingual content platform with fast page loads worldwide",
+    "overview": "A publisher running several separate WordPress sites wants one central content engine feeding web and mobile, with regional editors and consistent branding. This blueprint shows how we approach the migration and the target architecture.",
+    "clientOverview": "Typical fit: a media, education or multi-brand company with several sites and editorial teams.",
+    "challenge": "Slow preview builds, no granular editorial permissions, inconsistent branding across regions, and the risk of losing search rankings during migration.",
+    "solution": "A modular Strapi CMS with custom workflows, Next.js incremental static regeneration, automated CDN purging, and a redirect map so every old URL keeps its search equity.",
+    "keyFeatures": [
+     "Visual block builder with live mobile preview",
+     "Multi-language workflows with version rollback",
+     "Edge-cached GraphQL API"
+    ],
+    "developmentProcess": [
+     {
+      "phase": "01 Content model",
+      "detail": "Structured schemas and localisation rules."
+     },
+     {
+      "phase": "02 API layer",
+      "detail": "Strapi extensions, image pipeline and CDN hooks."
+     },
+     {
+      "phase": "03 Frontend",
+      "detail": "Next.js templates with dynamic Open Graph images."
+     },
+     {
+      "phase": "04 Migration",
+      "detail": "Scripted content migration with 301 redirects and SEO checks."
+     }
+    ],
+    "architectureNotes": "Central Strapi core behind Cloudflare CDN, rendered by Next.js on Vercel Edge.",
+    "results": [
+     {
+      "metric": "90+",
+      "label": "Target PageSpeed score"
+     },
+     {
+      "metric": "Self-serve",
+      "label": "Publishing without developer help"
+     },
+     {
+      "metric": "One",
+      "label": "Content hub for every site"
+     }
+    ]
+   }
+  },
+  {
+   "id": "logiops-custom-software",
+   "isPlaceholder": true,
+   "badge": "Custom Software",
+   "title": "LogiOps",
+   "category": "Custom Software",
+   "clientType": "Solution blueprint · Logistics operations",
+   "description": "How we would replace phone-and-spreadsheet dispatch with live fleet tracking and warehouse scanning.",
+   "image": "/images/projects/project-custom.svg",
+   "technologies": [
+    "Vue",
+    "Python",
+    "FastAPI",
+    "PostgreSQL",
+    "Redis",
+    "Leaflet"
+   ],
+   "url": "#projects",
+   "caseStudyUrl": "/case-study/?id=logiops-custom-software",
+   "featured": true,
+   "caseStudy": {
+    "headline": "Blueprint: automated fleet dispatch and real-time warehouse scanning",
+    "overview": "A regional logistics business coordinating vehicles and warehouses by phone and spreadsheets wants automated route assignment and live tracking. This blueprint shows the system we would design and how we would roll it out safely.",
+    "clientOverview": "Typical fit: a distributor or freight operator with multiple hubs and its own fleet.",
+    "challenge": "Manual dispatching causes inefficient routes, delayed tracking updates and check-in bottlenecks at warehouses.",
+    "solution": "An async FastAPI platform with live telematics, a tablet-optimised warehouse app with offline barcode scanning, and heuristic route optimisation.",
+    "keyFeatures": [
+     "Live fleet map with driver status",
+     "Barcode scanning with offline sync",
+     "Automated payload balancing"
+    ],
+    "developmentProcess": [
+     {
+      "phase": "01 Workflow mapping",
+      "detail": "On-site review of warehouse and dispatch processes."
+     },
+     {
+      "phase": "02 Routing engine",
+      "detail": "Route optimisation service in Python."
+     },
+     {
+      "phase": "03 Tablet UI",
+      "detail": "High-contrast interface for rugged devices."
+     },
+     {
+      "phase": "04 Pilot",
+      "detail": "Small pilot fleet before full rollout."
+     }
+    ],
+    "architectureNotes": "FastAPI services with Redis pub/sub for live map coordinates and a PostgreSQL backend.",
+    "results": [
+     {
+      "metric": "Live",
+      "label": "Fleet map with driver status"
+     },
+     {
+      "metric": "Offline",
+      "label": "Scanning that syncs when back online"
+     },
+     {
+      "metric": "Phased",
+      "label": "Pilot-first rollout"
+     }
+    ]
+   }
+  },
+  {
+   "id": "finvault-banking-gateway",
+   "isPlaceholder": true,
+   "badge": "FinTech",
+   "title": "FinVault",
+   "category": "Web App",
+   "clientType": "Solution blueprint · Payments & ledger",
+   "description": "How we would design a multi-currency payment gateway with an auditable double-entry ledger.",
+   "image": "/images/projects/project-fintech.svg",
+   "technologies": [
+    "React",
+    "TypeScript",
+    "Go",
+    "PostgreSQL",
+    "Kafka",
+    "Redis"
+   ],
+   "url": "#projects",
+   "caseStudyUrl": "/case-study/?id=finvault-banking-gateway",
+   "featured": false,
+   "caseStudy": {
+    "headline": "Blueprint: multi-currency settlements on an auditable double-entry ledger",
+    "overview": "A payments business needs to process cross-border transactions in multiple currencies with instant reconciliation and a clear audit trail. This blueprint shows the ledger design, event architecture and security controls we would use.",
+    "clientOverview": "Typical fit: a fintech or marketplace moving money between customers, merchants and banks.",
+    "challenge": "Slow FX settlement confirmations, manual reconciliation errors and opaque transaction auditing.",
+    "solution": "Go services with Kafka event streaming, a strict double-entry ledger with idempotent writes, and a client portal with approval workflows for large transfers.",
+    "keyFeatures": [
+     "Real-time FX rate lock",
+     "Immutable double-entry ledger",
+     "Multi-signatory approvals for large transfers"
+    ],
+    "developmentProcess": [
+     {
+      "phase": "01 Compliance",
+      "detail": "Audit model, idempotency rules and encryption design."
+     },
+     {
+      "phase": "02 Ledger engine",
+      "detail": "ACID transactional core in Go."
+     },
+     {
+      "phase": "03 Client portal",
+      "detail": "Live ledger dashboard with FX widgets."
+     },
+     {
+      "phase": "04 Security",
+      "detail": "Independent security review before go-live."
+     }
+    ],
+    "architectureNotes": "Go microservices with Kafka event processing, TLS 1.3, and PostgreSQL.",
+    "results": [
+     {
+      "metric": "Double-entry",
+      "label": "Ledger with a full audit trail"
+     },
+     {
+      "metric": "Idempotent",
+      "label": "Safe retries on every transaction"
+     },
+     {
+      "metric": "Multi-sig",
+      "label": "Approvals for large transfers"
+     }
+    ]
+   }
+  }
+ ],
+ "whyChooseUs": [
+  {
+   "icon": "target",
+   "title": "Business-first engineering",
+   "description": "Every technical decision maps to a business outcome."
+  },
+  {
+   "icon": "layers",
+   "title": "Built to scale",
+   "description": "Architectures that handle growth without costly rewrites."
+  },
+  {
+   "icon": "codeCheck",
+   "title": "Clean, documented code",
+   "description": "Typed, tested, and easy for your team to own."
+  },
+  {
+   "icon": "cpu",
+   "title": "Proven modern stack",
+   "description": "Mature tools with long-term ecosystem support."
+  },
+  {
+   "icon": "messagesSquare",
+   "title": "Transparent delivery",
+   "description": "Weekly demos, direct engineer access, no surprises."
+  },
+  {
+   "icon": "shieldCheck",
+   "title": "Long-term partnership",
+   "description": "Monitoring, security updates, and ongoing evolution."
+  }
+ ],
+ "process": [
+  {
+   "step": "01",
+   "phase": "Discover",
+   "title": "Scope & requirements",
+   "summary": "We map your business logic, users, and constraints into a clear specification.",
+   "deliverables": [
+    "Architecture blueprint",
+    "Milestone roadmap"
+   ]
+  },
+  {
+   "step": "02",
+   "phase": "Architect",
+   "title": "System design",
+   "summary": "Stack selection, data models, API contracts, and CI/CD setup.",
+   "deliverables": [
+    "API specification",
+    "Infrastructure plan"
+   ]
+  },
+  {
+   "step": "03",
+   "phase": "Design",
+   "title": "UI/UX & prototypes",
+   "summary": "Interactive Figma prototypes validate workflows before code is written.",
+   "deliverables": [
+    "Design system",
+    "Validated user flows"
+   ]
+  },
+  {
+   "step": "04",
+   "phase": "Build",
+   "title": "Agile engineering",
+   "summary": "Type-safe code, automated tests, and weekly staging demos.",
+   "deliverables": [
+    "Tested production codebase",
+    "Staging site for weekly demos"
+   ]
+  },
+  {
+   "step": "05",
+   "phase": "Deploy",
+   "title": "Launch",
+   "summary": "Staged deployment with rollback plans, load testing, and security verification.",
+   "deliverables": [
+    "Live deployment",
+    "Runbooks & handoff"
+   ]
+  },
+  {
+   "step": "06",
+   "phase": "Scale",
+   "title": "Monitor & evolve",
+   "summary": "Proactive monitoring, optimization, and rapid feature iteration.",
+   "deliverables": [
+    "Uptime telemetry",
+    "Continuous improvements"
+   ]
+  }
+ ],
+ "technologies": [
+  {
+   "category": "Frontend",
+   "description": "Responsive, accessible interfaces and single-page applications.",
+   "skills": [
+    {
+     "name": "React",
+     "logo": "react"
+    },
+    {
+     "name": "Next.js",
+     "logo": "nextdotjs"
+    },
+    {
+     "name": "TypeScript",
+     "logo": "typescript"
+    },
+    {
+     "name": "Tailwind CSS",
+     "logo": "tailwindcss"
+    },
+    {
+     "name": "Vue",
+     "logo": "vuedotjs"
+    },
+    {
+     "name": "Vite",
+     "logo": "vite"
+    }
+   ]
+  },
+  {
+   "category": "Backend & APIs",
+   "description": "Secure, scalable services, event streaming, and high-performance APIs.",
+   "skills": [
+    {
+     "name": "Node.js",
+     "logo": "nodedotjs"
+    },
+    {
+     "name": "Python",
+     "logo": "python"
+    },
+    {
+     "name": "FastAPI",
+     "logo": "fastapi"
+    },
+    {
+     "name": "Go",
+     "logo": "go"
+    },
+    {
+     "name": "GraphQL",
+     "logo": "graphql"
+    },
+    {
+     "name": "REST APIs",
+     "logo": "openapiinitiative"
+    },
+    {
+     "name": "WebSockets",
+     "logo": "socketdotio"
+    },
+    {
+     "name": "Kafka",
+     "logo": "apachekafka"
+    },
+    {
+     "name": "RabbitMQ",
+     "logo": "rabbitmq"
+    }
+   ]
+  },
+  {
+   "category": "Databases & Caching",
+   "description": "Relational modeling, caching layers, and time-series storage.",
+   "skills": [
+    {
+     "name": "PostgreSQL",
+     "logo": "postgresql"
+    },
+    {
+     "name": "Redis",
+     "logo": "redis"
+    },
+    {
+     "name": "TimescaleDB",
+     "logo": "timescale"
+    },
+    {
+     "name": "Prisma",
+     "logo": "prisma"
+    },
+    {
+     "name": "Drizzle",
+     "logo": "drizzle"
+    },
+    {
+     "name": "MongoDB",
+     "logo": "mongodb"
+    },
+    {
+     "name": "Supabase",
+     "logo": "supabase"
+    }
+   ]
+  },
+  {
+   "category": "Cloud, DevOps & CMS",
+   "description": "Deployment pipelines, containers, cloud hosting, and headless platforms.",
+   "skills": [
+    {
+     "name": "Docker",
+     "logo": "docker"
+    },
+    {
+     "name": "AWS",
+     "icon": "aws"
+    },
+    {
+     "name": "Kubernetes",
+     "logo": "kubernetes"
+    },
+    {
+     "name": "Vercel",
+     "logo": "vercel"
+    },
+    {
+     "name": "Cloudflare",
+     "logo": "cloudflare"
+    },
+    {
+     "name": "GitHub Actions",
+     "logo": "githubactions"
+    },
+    {
+     "name": "Firebase",
+     "logo": "firebase"
+    },
+    {
+     "name": "Strapi",
+     "logo": "strapi"
+    },
+    {
+     "name": "Contentful",
+     "logo": "contentful"
+    }
+   ]
+  }
+ ],
+ "about": {
+  "badge": "ABOUT THINKVISTAR",
+  "headline": "Engineering‑first, from day one.",
+  "lead": "We work with founders and growing businesses to turn product ideas and manual processes into reliable, well-built software.",
+  "paragraphs": [
+   "Thinkvistar LLP was founded in 2026 in Nalasopara West, in the Mumbai Metropolitan Region, with an engineering-first mindset: every technical decision should map to a business outcome, and every system should be easy for your team to own after we hand it over.",
+   "Whether you are launching a multi-tenant SaaS product, moving to a headless CMS, modernising an ageing system or automating document-heavy work, you work directly with the senior engineers who design and build it — with weekly demos, written updates and no account-manager layer in between.",
+   "We work with clients across India and remotely with teams in the US, UK and Europe. Our current clients include healthcare and home-care providers such as Viora Healthcare, Viva Homecare and The Walk."
+  ],
+  "highlights": [
+   {
+    "title": "Architectural integrity",
+    "description": "Scalable schemas, clean components, and test coverage from day one."
+   },
+   {
+    "title": "Direct senior access",
+    "description": "You work with the architects who build your product, not account managers."
+   },
+   {
+    "title": "Honest estimates",
+    "description": "Written scope, milestones and a timeline range before any work starts."
+   }
+  ]
+ },
+ "testimonials": {
+  "showSection": false,
+  "badge": "CLIENT FEEDBACK",
+  "title": "Trusted by engineering leaders",
+  "subtitle": "What CTOs and product leads say about working with us.",
+  "items": []
+ },
+ "cta": {
+  "badge": "LET'S TALK",
+  "headline": "Ready to build your next platform?",
+  "subtext": "Tell us what you're building. We'll scope it with you and aim to reply within 24 hours on business days.",
+  "buttonText": "Book a Consultation",
+  "buttonHref": "/contact/",
+  "secondaryText": "or email us at",
+  "email": "hello@thinkvistar.com"
+ },
+ "contact": {
+  "badge": "GET IN TOUCH",
+  "title": "Book a Consultation",
+  "subtitle": "Tell us about your project. We aim to respond within 24 hours on business days.",
+  "channels": {
+   "email": {
+    "label": "Email",
+    "value": "hello@thinkvistar.com",
+    "actionUrl": "mailto:hello@thinkvistar.com?subject=Project%20Inquiry",
+    "hint": "Best for RFPs and detailed briefs"
+   },
+   "whatsapp": {
+    "label": "WhatsApp",
+    "value": "+91 70210 67824",
+    "actionUrl": "https://wa.me/917021067824?text=Hi%20Thinkvistar,%20I'd%20like%20to%20discuss%20a%20software%20project.",
+    "hint": "Quick chat with a lead engineer"
+   },
+   "location": {
+    "label": "Office",
+    "value": "Yashwant Gaurav Phase 1, Nalasopara West, Palghar, Maharashtra 401203",
+    "hint": "Working with clients across India, the US, UK & Europe"
+   }
+  }
+ },
+ "termsAndConditions": {
+  "lastUpdated": "October 22, 2026",
+  "title": "Terms and Conditions",
+  "subtitle": "Terms for using this website (Part A), and Thinkvistar LLP's standard terms for consulting and software development services (Part B), which apply unless a signed agreement says otherwise.",
+  "sections": [
+   {
+    "title": "1. About These Terms",
+    "content": "These Terms and Conditions are in two parts. Part A (section 2) governs your use of this website. Part B (sections 3 to 24) are Thinkvistar LLP's standard terms for consulting, software development and related services (the “Services”). Part B applies to every engagement unless a Master Services Agreement or Statement of Work signed by both parties expressly replaces it. “Thinkvistar”, “we”, “us” and “our” mean Thinkvistar LLP, Yashwant Gaurav Phase 1, Nalasopara West, Maharashtra, India. “Client” and “you” mean the person or organisation that engages us. If you accept on behalf of an organisation, you confirm that you have authority to bind it."
+   },
+   {
+    "title": "2. Using This Website",
+    "content": "The information on this website, including the project estimator, FAQs, timelines, sample blueprints and case studies, is general and indicative. It is not an offer, quotation or guarantee, and you should not rely on it as a promise of any particular result. A commitment arises only under a Statement of Work (see section 3). In relation to the website itself:",
+    "items": [
+     "You agree not to attack, overload or attempt to gain unauthorised access to the website, to misuse the contact form, or to copy it in a way that harms the site or its owners.",
+     "The Thinkvistar name, logo, design and website content belong to Thinkvistar LLP and may not be used without our written permission. Names and logos of third parties (including technology vendors) belong to their owners and are used only to identify technologies; their use does not imply affiliation or endorsement.",
+     "Links to other websites are provided for convenience. We are not responsible for their content or privacy practices.",
+     "To the extent permitted by law, the website is provided “as available” without warranties. Nothing in these Terms limits or excludes any liability that the law does not allow to be limited or excluded.",
+     "How we handle personal information is described in our Privacy Policy."
+    ]
+   },
+   {
+    "title": "3. Agreement, Acceptance & Order of Precedence",
+    "content": "Visiting the website does not create a services contract. An engagement exists only when a Statement of Work (“SOW”) describing the Services has been accepted by both parties. A party accepts an SOW or a Master Services Agreement by signing it by hand or by an electronic signature that is valid under the Information Technology Act, 2000, or by an email from the address of its authorised representative named in the SOW that expressly accepts the identified document. Each SOW incorporates Part B of these Terms as in force on the date of the SOW.",
+    "items": [
+     "Instant messaging (including WhatsApp) may be used for day-to-day coordination. It cannot be used to accept or vary an SOW, to approve a Change Request or Acceptance, or to give notice of termination, unless the same message is confirmed by email as described above.",
+     "If documents conflict, the following order applies, highest first: (a) the SOW, but only on the matters it expressly says it varies; (b) a signed Master Services Agreement; (c) Part B of these Terms; (d) Part A of these Terms. Statements on the website or in marketing material form no part of the contract unless the SOW repeats them.",
+     "Nothing in this section excludes or limits liability for fraud or fraudulent misrepresentation."
+    ]
+   },
+   {
+    "title": "4. Key Definitions",
+    "content": "In Part B:",
+    "items": [
+     "“Deliverable” means an item expressly listed as a deliverable in an SOW.",
+     "“Acceptance Criteria” means the written, objectively testable criteria in the SOW or, if none, the specification approved in writing by the Client.",
+     "“Defect” means a failure of a Deliverable to materially conform to its Acceptance Criteria that we can reproduce. A change of requirement, a preference, or a feature not stated in the Acceptance Criteria is not a Defect.",
+     "“Change Request” means a written request to change scope, Deliverables, timetable or assumptions.",
+     "“Completion” means the earliest of the Client's written acceptance, deemed acceptance under section 8, or use of the Deliverable in production.",
+     "“Support” and “Maintenance” mean services described in a written support schedule; they do not include new features, which require a Change Request.",
+     "“Client Data” means data, content and materials supplied by or for the Client, including personal data of its users.",
+     "“Confidential Information” has the meaning in section 12. “Third-Party Services” means services, software or platforms that Thinkvistar does not own.",
+     "“Force Majeure Event” has the meaning in section 20. “Business Day” means a day other than Saturday, Sunday or a public holiday in Mumbai.",
+     "“Material Breach” means a breach that substantially deprives the other party of the benefit of the agreement, or a breach of sections 9, 12 or 13 that is not cured within the period in section 10."
+    ]
+   },
+   {
+    "title": "5. Scope of Services, Proposals & Estimates",
+    "content": "Our services include SaaS product engineering, headless CMS implementation, web and mobile application development, custom software engineering, UI/UX design, cloud and DevOps setup, API integrations, AI automation, code and architecture review, and technical support under a support schedule. The specific Deliverables, Acceptance Criteria, timetable, fees, assumptions and exclusions for each engagement are defined in the SOW. Anything not stated in the SOW is outside its scope. Timelines, costs and architectures in proposals, the online estimator and on this website are indicative only and become binding only when set out in an SOW. Unless stated otherwise, a proposal or estimate is valid for thirty (30) days from the date it is issued. Where the SOW includes messaging (SMS, email, WhatsApp or push), see section 15."
+   },
+   {
+    "title": "6. Change Requests",
+    "content": "Any change to scope, Deliverables, timetable or assumptions must be requested in writing. Within three (3) Business Days we will state the effect on fees, timetable and assumptions. No change takes effect, and we are not obliged to perform it, until both parties approve it in writing. If the Client gives a written instruction by email that requires urgent work before a Change Request is approved, we may perform it and charge at the rates in the SOW, or at our then-current time-and-materials rates if the SOW has none."
+   },
+   {
+    "title": "7. Client Responsibilities & Delay",
+    "content": "Dates in the SOW assume that the Client meets its dependencies on time. The Client agrees to:",
+    "items": [
+     "Provide access, credentials, brand assets, content, API documentation, feedback and approvals promptly, and name a single point of contact who can make decisions.",
+     "Be responsible for the accuracy, lawfulness and rights position of all materials it provides to us.",
+     "Understand that if a dependency is late, affected dates move by at least the period of delay. If the delay exceeds ten (10) Business Days we may, on written notice, reschedule our resources; if it exceeds thirty (30) days we may treat the affected milestone as complete to the extent of the work done and invoice for it, and may charge reasonable standby costs at the SOW rates.",
+     "Accept that we are not responsible for delay caused by the Client, its other suppliers or Third-Party Services outside our reasonable control, except to the extent we caused it."
+    ]
+   },
+   {
+    "title": "8. Delivery, Acceptance & Revisions",
+    "content": "We will notify the Client when a Deliverable or milestone is ready for review. Within five (5) Business Days (the “Acceptance Period”) the Client must either accept it in writing or give written notice listing each Defect with enough detail to reproduce it.",
+    "items": [
+     "We will correct notified Defects and resubmit. The Acceptance Period then restarts for the corrected items only.",
+     "A Deliverable is deemed accepted if the Client gives no Defect notice within the Acceptance Period, or uses it in production, whichever is earlier.",
+     "Unless the SOW says otherwise, each milestone includes two (2) consolidated rounds of revisions limited to the approved design or specification. Further revisions, or changes to approved designs, are Change Requests.",
+     "Handover includes the Deliverables and the documentation described in the SOW."
+    ]
+   },
+   {
+    "title": "9. Fees, Invoicing & Payment",
+    "content": "Invoices are issued according to the milestones or retainer schedule in the SOW.",
+    "items": [
+     "Invoices are payable within fourteen (14) days of receipt unless the SOW states otherwise.",
+     "Fees are exclusive of Goods and Services Tax and other applicable taxes, which are added to invoices as required by law. Third-party costs (cloud hosting, domain names, gateway credits, paid APIs, licences) are charged at actual cost unless the SOW includes them.",
+     "If the Client disputes an invoice in good faith it must tell us in writing within seven (7) days of receipt, with reasons, and pay the undisputed part by the due date. The parties will try to resolve the dispute under section 22.",
+     "Undisputed amounts not paid by the due date carry interest from the due date until payment at 1.5% per month or the highest rate permitted by applicable law, whichever is lower. The parties agree this is a reasonable estimate of our cost of late payment.",
+     "If an undisputed amount remains unpaid seven (7) days after a written reminder, we may suspend work. We may suspend hosted or live services for non-payment only after a further fourteen (14) days' written notice. For at least thirty (30) days during any suspension we will let the Client export its Client Data in a standard format and will not delete it.",
+     "Retainers and subscriptions are invoiced in advance for the period stated in the SOW."
+    ]
+   },
+   {
+    "title": "10. Term, Termination, Cancellation & Refunds",
+    "content": "Either party may terminate an SOW as follows:",
+    "items": [
+     "For convenience, on fourteen (14) days' written notice. The Client then pays for work performed up to the termination date and for non-cancellable third-party commitments made for the Client. Work in progress that is not yet invoiced is valued by the percentage of the milestone completed or, if none, by time spent at the SOW rates.",
+     "For cause, by written notice if the other party commits a Material Breach and does not cure it within fifteen (15) days of notice, or immediately if the other party becomes insolvent or if continuing would require it to act unlawfully.",
+     "Advance payments and deposits are credited against fees. If the Client terminates for convenience, they are retained to the extent of the amounts due under this section and any balance is refunded. If the Client terminates for our uncured Material Breach, or we terminate for convenience, we will refund the part of the advance payments that exceeds the value of work properly performed and accepted or deemed accepted.",
+     "Third-party charges, prepaid credits and subscription fees that have been consumed or committed on the Client's behalf are not refundable, except to the extent we can recover them.",
+     "Within fifteen (15) days after termination we will issue a final statement, and any refund will be paid within thirty (30) days of it. On request we will give reasonable handover assistance for thirty (30) days, deliver completed Deliverables in accordance with section 11, and return or delete Client Data in accordance with section 13."
+    ]
+   },
+   {
+    "title": "11. Intellectual Property Rights",
+    "content": "Unless the SOW states otherwise:",
+    "items": [
+     "Bespoke Deliverables. Subject to payment in full of the fees for a Deliverable, we assign to the Client all right, title and interest, including copyright, in the source code, visual assets, database schemas and customised software created specifically for the Client under the SOW (the “Bespoke Deliverables”), throughout the world and for the full term of the rights. We will sign a short assignment deed on request. The assignment takes effect on receipt of payment whether or not the deed has been signed. Until payment in full the Client has a non-exclusive, revocable licence to use the Deliverable for evaluation and testing.",
+     "Pre-existing materials. We keep all rights in the libraries, frameworks, templates, developer tools, documentation and know-how that we owned before the SOW or develop independently of it. We grant the Client a non-exclusive, worldwide, perpetual, royalty-free licence, transferable with its business, to use them as embedded in the Bespoke Deliverables.",
+     "Third-party and open-source components remain subject to their own licences, which we will list in the handover documentation and which the Client must follow. We will not knowingly include a component whose licence would require disclosure of the Client's proprietary source code without telling the Client first.",
+     "Client materials. The Client keeps its rights in Client Data and the materials it supplies, and gives us a licence to use them to perform the SOW. The Client confirms that it has the right to supply them.",
+     "General skills. Nothing restricts us from using our general skills and knowledge, provided we do not use the Client's Confidential Information.",
+     "Publicity. We will identify the Client by name or logo, or publish a case study about the work, only with the Client's written consent (an email is enough). The Client may withdraw consent for future uses. Without consent we may describe the work generically without identifying the Client or disclosing Confidential Information.",
+     "The Thinkvistar name, logo and website content remain our property."
+    ]
+   },
+   {
+    "title": "12. Confidentiality",
+    "content": "“Confidential Information” means non-public information disclosed by a party that is marked confidential or would reasonably be understood to be confidential, including business processes, customer data, credentials, source code and technical specifications. The recipient will use it only to perform or receive the Services, protect it with at least reasonable care, and disclose it only to its employees, contractors and professional advisers who need to know it and are bound by equivalent duties.",
+    "items": [
+     "These duties do not apply to information that (a) is or becomes public other than through breach; (b) the recipient already knew free of any duty; (c) the recipient lawfully receives from a third party; (d) the recipient develops independently without using it; or (e) must be disclosed by law, court order or regulator, in which case the recipient will, where lawful, give prompt notice and disclose only what is required.",
+     "On request or termination the recipient will return or delete Confidential Information, except for copies required by law or held in routine backups, which stay subject to this section.",
+     "The duties last during the engagement and for three (3) years afterwards, and for as long as trade secrets remain secret and personal data remain in the recipient's hands."
+    ]
+   },
+   {
+    "title": "13. Data Protection & Security",
+    "content": "Where Client Data includes personal data, the Client is the controller (the Data Fiduciary under the Digital Personal Data Protection Act, 2023) and Thinkvistar is the processor. The Client is responsible for the lawful basis, notices and any consent needed for the processing it instructs.",
+    "items": [
+     "We will process that personal data only on the Client's documented instructions, which are the SOW and this section, unless the law requires otherwise.",
+     "We will apply technical and organisational measures appropriate to the risk, as described in the SOW or a security schedule. No system is completely secure, and we do not promise that Client Data will never be accessed without authority.",
+     "Sub-processors and processing locations will be those agreed in the SOW or listed in a schedule. We will give reasonable notice of changes, require equivalent obligations of them, and remain responsible for them. Cross-border transfers will comply with applicable law.",
+     "If we become aware of a personal data breach affecting Client Data, we will notify the Client without undue delay and in any event within seventy-two (72) hours, with the information then available, and will help the Client meet its own notification duties to affected people and authorities (including the Data Protection Board of India and, where applicable, CERT-In).",
+     "We will reasonably help the Client respond to requests from individuals and regulators, and will provide information reasonably needed to show compliance, up to once a year unless there has been an incident.",
+     "Within thirty (30) days after the Services end we will return or delete Client Data at the Client's choice, unless the law requires us to keep it, and confirm in writing."
+    ]
+   },
+   {
+    "title": "14. Warranty, Support & Service Levels",
+    "content": "For thirty (30) days after Completion (the “Warranty Period”) we warrant that each Deliverable will materially conform to its Acceptance Criteria. Our obligation is to correct Defects notified in writing during the Warranty Period, with enough detail to reproduce them, within a reasonable time having regard to their severity.",
+    "items": [
+     "The warranty does not cover problems caused by changes made by anyone other than Thinkvistar, use contrary to the documentation, Client Data or environments outside the SOW, Third-Party Services, or requirements not stated in the Acceptance Criteria.",
+     "To the extent permitted by law, we do not warrant that software will be error-free or operate without interruption, and all other warranties, conditions and representations are excluded except those that the law does not allow to be excluded.",
+     "Support and Maintenance after the Warranty Period are provided only under a written support schedule that states hours of cover, response and resolution targets by severity, exclusions and the remedy for missing them. Uptime or performance figures in proposals, the estimator or on this website are design targets, not guarantees, unless a support schedule states otherwise."
+    ]
+   },
+   {
+    "title": "15. Third-Party Services & Messaging",
+    "content": "Our solutions often use Third-Party Services such as cloud hosting, payment gateways, email, SMS and WhatsApp gateways, telecom operators and external APIs. These are governed by their providers' terms, and the Client may need its own accounts or licences.",
+    "items": [
+     "We will select, configure and integrate them with reasonable skill and care. We are not responsible for outages, price or policy changes, delivery failures or the data practices of Third-Party Services outside our reasonable control, except to the extent caused by our failure to use that care.",
+     "Where the SOW includes messaging, delivery depends on carriers and platforms and cannot be guaranteed. The Client is responsible for the regulatory steps that apply to it (for example TRAI DLT registration, sender IDs, templates and DND compliance in India) and for lawful consent from message recipients."
+    ]
+   },
+   {
+    "title": "16. Acceptable Use",
+    "content": "The Services and any software we deliver or operate must be used lawfully and for professional and business purposes. The Client must not use them, and must not allow others to use them, to:",
+    "items": [
+     "Promote or conduct unlawful activity, fraud or deception, or send unsolicited bulk messages to people who have not opted in.",
+     "Send or publish unlawful, abusive, harassing or discriminatory material, or infringe another person's intellectual property or privacy rights.",
+     "Impersonate any person or organisation or spoof sender identities.",
+     "Transmit malware or phishing links, or attempt to disrupt, damage or gain unauthorised access to any system or data.",
+     "Collect or process personal data of others without a lawful basis.",
+     "Reverse engineer, resell or sublicense our proprietary tools or hosted platforms except as the SOW or the law allows.",
+     "Bypass rate limits, security controls or usage quotas of any service we operate."
+    ]
+   },
+   {
+    "title": "17. Limitation of Liability",
+    "content": "Nothing in these Terms limits or excludes either party's liability for fraud or fraudulent misrepresentation, death or personal injury caused by negligence, wilful misconduct, the Client's obligation to pay fees, or any other liability that cannot be limited or excluded under applicable law. Subject to that:",
+    "items": [
+     "To the extent permitted by law, neither party is liable for loss of profit, revenue, goodwill or anticipated savings, or for indirect or consequential loss.",
+     "Each party's total liability arising out of or in connection with an SOW, whether in contract, tort (including negligence) or otherwise, is limited to the total fees paid and payable under that SOW.",
+     "We are responsible for backups and restoration only as the SOW or a support schedule states. Where we are responsible, our liability for loss of data is limited to the reasonable cost of restoring the data from the most recent backup.",
+     "Each party must take reasonable steps to mitigate loss, and claims must be notified in writing within twelve (12) months of the claimant becoming aware of the facts.",
+     "We are not liable for the content of messages, communications or data transmitted by the Client or its users through any platform we build or operate for it, except where a claim arises from our own breach.",
+     "The parties agree that these limits reflect the price of the Services and the allocation of risk between them."
+    ]
+   },
+   {
+    "title": "18. Indemnities",
+    "content": "The Client will indemnify Thinkvistar against third-party claims, and resulting losses and reasonable legal costs, to the extent arising from (a) Client Data, content or materials supplied by or for the Client, including the content of messages sent through platforms we build for it; (b) the Client's instructions where they required us to act unlawfully; or (c) the Client's use of the Deliverables in breach of law or of these Terms.",
+    "items": [
+     "Thinkvistar will indemnify the Client against third-party claims that a Bespoke Deliverable, as delivered, infringes that third party's copyright or trade secret, to the extent the claim does not arise from Client materials, third-party or open-source components, modifications not made by Thinkvistar, or combination with items we did not supply. If a claim is made we may obtain the right for the Client to keep using the item, modify or replace it, or, if neither is reasonably practicable, refund the fees paid for it.",
+     "The indemnified party must give prompt written notice, let the indemnifying party control the defence and settlement (but no settlement may admit fault or impose obligations on the indemnified party without its consent), and give reasonable help at the indemnifying party's cost. Indemnities are subject to section 17."
+    ]
+   },
+   {
+    "title": "19. Suspension for Prohibited Use",
+    "content": "We may suspend a service immediately, and only to the extent necessary, where continued use creates an imminent risk of unlawful activity, a security compromise or harm to a third party. We will tell the Client as soon as practicable and restore the service once the risk is removed. In other cases we will give written notice and seven (7) days to cure before suspending. Termination for an uncured Material Breach is governed by section 10. On termination we will refund prepaid fees for periods after termination, less amounts due and costs we cannot recover, except where termination follows the Client's unlawful use."
+   },
+   {
+    "title": "20. Force Majeure",
+    "content": "Neither party is liable for failure or delay in performing an obligation (other than an obligation to pay money for work already performed) to the extent caused by an event beyond its reasonable control, including natural disaster, fire, flood, epidemic, war, terrorism, civil disturbance, governmental or regulatory action, failure of public utilities or networks, or a widespread outage of a major cloud or telecom provider that the affected party could not reasonably have avoided (a “Force Majeure Event”). Industrial action by a party's own workforce and delay by its subcontractors (unless itself caused by a Force Majeure Event) are not Force Majeure Events. The affected party must notify the other within five (5) Business Days, use reasonable efforts to mitigate and resume performance, and the time for performance is extended accordingly. If the event continues for more than sixty (60) days either party may terminate the affected SOW by written notice, and section 10 applies to final settlement."
+   },
+   {
+    "title": "21. International Clients",
+    "content": "For Clients outside India:",
+    "items": [
+     "Fees are stated and payable in the currency in the SOW. The Client bears its own bank and transfer charges and any currency conversion costs, so that we receive the invoiced amount.",
+     "Fees exclude sales, use, value-added and similar indirect taxes. If the Client must withhold tax it will tell us before the invoice date, pay the amount withheld to the authority and give us the official certificate; any gross-up is agreed in the SOW.",
+     "The Client confirms that neither it, its owners nor its end users are subject to sanctions that would make performance unlawful, and will not use the Deliverables in breach of export-control or sanctions law. We may suspend or end performance if continuing would breach such law.",
+     "Nothing in these Terms excludes rights that the mandatory law of the Client's country gives it and that cannot lawfully be waived by contract.",
+     "Where personal data subject to foreign law is processed, the parties will sign the transfer mechanism that law requires."
+    ]
+   },
+   {
+    "title": "22. Governing Law & Dispute Resolution",
+    "content": "These Terms and each SOW are governed by the laws of India, without regard to conflict-of-laws principles.",
+    "items": [
+     "Escalation. The parties' designated representatives will meet within ten (10) Business Days of a written dispute notice. If the dispute is not resolved within a further ten (10) Business Days it passes to senior management for ten (10) Business Days. Negotiation is without prejudice and in good faith.",
+     "Arbitration. A dispute not resolved by escalation is finally resolved by arbitration under the Arbitration and Conciliation Act, 1996, before a sole arbitrator appointed by agreement within fifteen (15) days of a request or, failing that, under section 11 of the Act. The seat is Mumbai, Maharashtra, the language is English, the award is reasoned and final, and the proceedings are confidential except as needed to enforce an award.",
+     "Interim relief. Either party may apply to a competent court for urgent interim or injunctive relief, including for infringement of intellectual property or breach of confidentiality. Subject to this, the courts at Mumbai have exclusive jurisdiction over matters arising under the Act.",
+     "Unless an SOW has been terminated, the parties will keep performing during a dispute and the Client will pay undisputed amounts."
+    ]
+   },
+   {
+    "title": "23. General Provisions",
+    "items": [
+     "Entire agreement. The SOW, any signed Master Services Agreement and these Terms are the whole agreement for the Services (subject to section 3, last bullet).",
+     "Amendments must be in writing signed by both parties, or by email from authorised representatives for a Change Request.",
+     "If a provision is unenforceable, the rest continues to apply. A failure to enforce a right is not a waiver of it.",
+     "Neither party may assign its rights without the other's consent, but we may use subcontractors and remain responsible for them. The parties are independent contractors, and nothing creates a partnership or agency.",
+     "Notices must be given by courier or registered post to the addresses in the SOW (deemed received on delivery) or by email to the notice address in the SOW (deemed received on the next Business Day unless a delivery-failure message is received). Instant messaging is not valid notice.",
+     "The SOW may be signed in counterparts and electronically. Provisions that by their nature continue (including payment, intellectual property, confidentiality, data protection, liability, indemnities and governing law) survive termination."
+    ]
+   },
+   {
+    "title": "24. Changes to These Terms & Contact",
+    "content": "We may update these Terms from time to time. Updates to Part A apply from the date they are posted with a revised “Last Updated” date. Updates to Part B apply to SOWs made after that date; they do not change an SOW that has already been accepted unless the Client agrees in writing. For questions about these Terms, to report a problem, or to request a tailored Master Services Agreement, contact us at hello@thinkvistar.com or write to Thinkvistar LLP, Yashwant Gaurav Phase 1, Nalasopara West, Maharashtra, India."
+   }
+  ]
+ },
+ "privacyPolicy": {
+  "lastUpdated": "October 22, 2026",
+  "title": "Privacy Policy",
+  "subtitle": "How Thinkvistar LLP collects, uses, protects, and discloses information when you visit our website, contact us, or use the services and platforms we provide.",
+  "sections": [
+   {
+    "title": "1. Introduction & Scope",
+    "content": "This Privacy Policy explains how Thinkvistar LLP (“we”, “us” or “our”) collects, uses, stores and discloses information, including personal information (“Information”), when you visit this website (the “Site”), request a proposal or use the project estimator, contact our team by email, phone or WhatsApp, or use software or services we deliver (the “Services”). Unless a Service Agreement signed with you says otherwise, the Information we collect or receive is used and protected as set out below. By using the Site you acknowledge this Policy. Where we need your consent (for example, to send you marketing), we ask for it separately and you may withdraw it at any time. We use the details you send in an enquiry in order to respond to you; during an engagement we process information to perform the contract and to meet legal obligations."
+   },
+   {
+    "title": "2. Personal Information We Collect",
+    "content": "Unless otherwise stated in a specific Service Agreement, the personal information collected during registration, while filling in contact or enquiry forms, or during the course of an engagement shall constitute your Personal Information. This may include:",
+    "items": [
+     "Identity and contact details: first name, last name, company or organization name, designation, email address, contact number, postal address, city, PIN/ZIP code, and country.",
+     "Business and project details: project requirements, technical specifications, budget ranges, timelines, and any documents or credentials you choose to share for the purpose of delivering the Services.",
+     "Account information: usernames, encrypted passwords, roles, and activity logs where we provide you with a dashboard, admin panel, or API access.",
+     "Billing information: GSTIN, billing address, and payment references. We do not store full card or bank details; payments are processed by third-party payment gateways.",
+     "Communication records: emails, WhatsApp messages, call notes, and support tickets exchanged with our team."
+    ]
+   },
+   {
+    "title": "3. Non-Personal & Technical Information",
+    "content": "When you visit the Site, our website host keeps standard server logs (such as IP address, browser type, pages requested and time) for security and troubleshooting. To limit spam, the enquiry form keeps, for up to a few hours, a record that contains a one-way hash of your network address and the time of your request. The Site does not currently use analytics, advertising cookies or cross-site tracking. We use such technical information to keep the Site working and secure; we do not use it to build a profile of you."
+   },
+   {
+    "title": "4. How We Use Your Information",
+    "content": "We use the Information we collect for the following purposes:",
+    "items": [
+     "To respond to your enquiries, prepare technical proposals and estimates, and coordinate consultations.",
+     "To deliver, operate, maintain, and support the Services and platforms we build for you, including creating and managing accounts.",
+     "To issue invoices, process payments, and maintain accounting and tax records as required by Indian law.",
+     "To communicate project updates, milestone approvals, security notices, and changes to our terms or policies.",
+     "To send occasional information about our services, case studies or offers, only if you have chosen to receive it; you may unsubscribe at any time.",
+     "To detect, prevent, and address fraud, security incidents, abuse, or violations of our Terms and Conditions.",
+     "To comply with applicable legal obligations and enforce our agreements."
+    ],
+    "note": "We never sell, rent, or trade your Personal Information to third-party advertisers or data brokers."
+   },
+   {
+    "title": "5. Sharing & Disclosure of Information",
+    "content": "We do not share your Personal Information with third parties without your permission, except in the following cases:",
+    "items": [
+     "With our team members and contractors who need the information to deliver the Services and who are bound to keep it confidential and to protect it in line with this Policy.",
+     "With service providers that help us run our business and deliver the Services, such as website hosting, email, messaging and cloud providers and, where relevant, payment gateways, who may use the information only for the purposes we specify and are required to protect it. If you contact us on WhatsApp, that conversation is also handled by that platform under its own terms.",
+     "With courts, regulators, law enforcement or government authorities where required by law, court order or legal process, or where we believe in good faith that disclosure is necessary to protect our rights, your safety or the safety of others, or to investigate fraud or a security incident.",
+     "In connection with a merger, acquisition, restructuring or sale of all or part of our business, in which case the recipient will be required to protect the Information consistently with this Policy.",
+     "In aggregated or anonymised form that cannot reasonably be used to identify you, for example in portfolio case studies or performance statistics."
+    ]
+   },
+   {
+    "title": "6. Client Data & End-User Information",
+    "content": "When we build, host or maintain a platform on your behalf, we may process data belonging to your customers or end users (“Client Data”). In that case you are the controller (the Data Fiduciary under the Digital Personal Data Protection Act, 2023) and we act as your processor. We process Client Data only on your documented instructions and as set out in our service terms or a data processing agreement; we do not use it for our own purposes, and we delete or return it at the end of the engagement unless the law requires us to keep it. You are responsible for obtaining the consents and giving the notices that apply to your own users, and for ensuring your own privacy notices cover the platforms we build for you."
+   },
+   {
+    "title": "7. Cookies & Analytics",
+    "content": "The Site does not use cookies for analytics or advertising and does not currently run analytics or cross-site tracking. If we add privacy-focused analytics in future, we will update this Policy first. You can control or delete cookies through your browser settings."
+   },
+   {
+    "title": "8. Data Security",
+    "content": "We take reasonable steps to protect your Information, appropriate to the risk. These include encrypted connections (TLS) for this Site and for data in transit, limiting access to personal information to people who need it for their work, and keeping credentials and secrets out of public source code. No method of transmission over the Internet or electronic storage is completely secure, and we cannot guarantee absolute security. If we become aware of a data breach affecting your Personal Information, we will notify you and the relevant authorities as required by applicable law."
+   },
+   {
+    "title": "9. Data Retention",
+    "content": "We keep Personal Information only for as long as necessary for the purposes for which it was collected, to deliver and support the Services, and to meet legal, accounting and tax obligations. We aim to delete enquiry data that does not lead to an engagement within twenty-four (24) months. Project and billing records are kept for the period that applicable law requires (for financial records this is typically up to eight years). Client Data is handled as described in Section 6."
+   },
+   {
+    "title": "10. Your Rights & Choices",
+    "content": "You have rights over your Personal Information under applicable law. The rights in the Digital Personal Data Protection Act, 2023 apply from the date the relevant provisions and the Rules made under it come into force (for most obligations this is currently expected to be 13 May 2027). Until then, and afterwards, we will respond to reasonable requests about your Personal Information. Subject to applicable law, you may:",
+    "items": [
+     "Access the Personal Information we hold about you and request a copy.",
+     "Request correction of inaccurate or incomplete Personal Information.",
+     "Request deletion of your Personal Information, subject to our legal retention obligations.",
+     "Withdraw consent for marketing communications at any time by using the unsubscribe link or contacting us.",
+     "Nominate another person to exercise these rights on your behalf in the event of death or incapacity.",
+     "Raise a grievance with us, and if unresolved, with the Data Protection Board of India or other competent authority."
+    ],
+    "note": "To exercise any of these rights, write to hello@thinkvistar.com. We will reply within a reasonable time and in any event within the period the law requires."
+   },
+   {
+    "title": "11. Third-Party Links & Services",
+    "content": "The Site and Services may contain links to third-party websites and services (such as LinkedIn, WhatsApp or payment and cloud platforms). We are not responsible for their privacy practices or content, and this Policy does not apply to them. We encourage you to read their policies."
+   },
+   {
+    "title": "12. Children's Privacy",
+    "content": "Our Site and Services are intended for businesses and professionals and are not directed at children under eighteen (18) years of age. We do not knowingly collect Personal Information from children. If you believe a child has provided us with Personal Information, please contact us and we will delete it promptly."
+   },
+   {
+    "title": "13. International Data Transfers",
+    "content": "Thinkvistar LLP is based in India. Depending on the hosting, email and communication providers used for your project, Information may be stored or processed on servers outside India. Where this happens, we take reasonable steps to ensure it is protected consistently with this Policy and applicable law, and project-specific locations are agreed in the SOW or a data processing agreement."
+   },
+   {
+    "title": "14. Changes to This Privacy Policy",
+    "content": "We may update this Privacy Policy from time to time to reflect changes in our practices, technology, or legal requirements. Updated versions will be posted on this page with a revised \"Last Updated\" date. Material changes affecting active clients will be communicated by email. Your continued use of the Site or Services after such changes constitutes acceptance of the revised Policy."
+   },
+   {
+    "title": "15. Grievance Officer & Contact",
+    "content": "In accordance with the Information Technology Act, 2000 and the rules made under it, if you have questions, concerns or complaints about this Policy or the handling of your Personal Information, contact the Grievance Officer of Thinkvistar LLP at hello@thinkvistar.com, or write to Thinkvistar LLP, Yashwant Gaurav Phase 1, Nalasopara West, Maharashtra, India. We aim to acknowledge grievances within two (2) working days and to resolve them within thirty (30) days, or within the period the law requires. If your grievance is not resolved you may approach the Data Protection Board of India or another competent authority, as the law allows."
+   }
+  ]
+ },
+ "footer": {
+  "about": "A senior-led software engineering studio near Mumbai, building SaaS platforms, web and mobile apps, headless CMS websites and AI automation.",
+  "copyright": "© 2026 Thinkvistar LLP. All rights reserved.",
+  "quickLinks": [
+   {
+    "label": "About",
+    "href": "/about/"
+   },
+   {
+    "label": "Services",
+    "href": "/services/"
+   },
+   {
+    "label": "Industries",
+    "href": "/industries/"
+   },
+   {
+    "label": "Work",
+    "href": "/projects/"
+   },
+   {
+    "label": "Tech Stack",
+    "href": "/tech-stack/"
+   },
+   {
+    "label": "Project Estimator",
+    "href": "/estimator/"
+   },
+   {
+    "label": "Contact",
+    "href": "/contact/"
+   }
+  ],
+  "legalLinks": [
+   {
+    "label": "Terms & Conditions",
+    "href": "/terms/"
+   },
+   {
+    "label": "Privacy Policy",
+    "href": "/privacy/"
+   }
+  ]
+ },
+ "clients": {
+  "badge": "OUR CLIENTS",
+  "title": "Trusted by growing businesses",
+  "items": [
+   {
+    "name": "Viora Healthcare",
+    "logo": "/images/clients/viora-healthcare.webp",
+    "url": "https://viorahealthcare.in/",
+    "industry": "Healthcare"
+   },
+   {
+    "name": "Viva Homecare",
+    "logo": "/images/clients/viva-homecare.webp",
+    "url": "https://vivahomecare.in/",
+    "industry": "Home healthcare"
+   },
+   {
+    "name": "The Walk",
+    "logo": "/images/clients/the-walk.webp",
+    "url": "https://thewalkphysio.com/",
+    "industry": "Physiotherapy"
+   }
+  ]
+ },
+ "team": [
+  {
+   "name": "Rahul Dubey",
+   "phone": "+91 98909 32123",
+   "whatsapp": "919890932123",
+   "role": "",
+   "bio": "",
+   "profiles": [
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/in/rahul-dubey-20/"
+    }
+   ]
+  },
+  {
+   "name": "Satish Mishra",
+   "phone": "+91 70210 67824",
+   "whatsapp": "917021067824",
+   "role": "",
+   "bio": "",
+   "profiles": [
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/in/satish-mishra-b808381bb/"
+    }
+   ]
+  },
+  {
+   "name": "Chandan Yadav",
+   "phone": "+91 97635 80509",
+   "whatsapp": "919763580509",
+   "role": "",
+   "bio": "",
+   "profiles": [
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/in/chandan-yadav-8731121b8/"
+    }
+   ]
+  }
+ ]
+}

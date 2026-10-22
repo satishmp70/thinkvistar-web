@@ -27,7 +27,7 @@ Nothing here guarantees rankings. The goal is a site that is crawlable, fast, tr
 
 ## 2. What was changed
 
-**Architecture.** The original source had been deleted, so the deployable root was rebuilt from a new `_src/` folder (see README.md). One command rebuilds every page from a shared layout, fingerprints the assets and **pre-renders all JavaScript content into the HTML**. The design, URLs and features (estimator, contact form, blueprint pages) are unchanged.
+**Architecture.** The original source had been deleted, so the deployable root was rebuilt from a new `src/` folder (see README.md). One command rebuilds every page from a shared layout, fingerprints the assets and **pre-renders all JavaScript content into the HTML**. The design, URLs and features (estimator, contact form, blueprint pages) are unchanged.
 
 **Honesty and trust**
 - Fake testimonials removed. The section stays hidden until real ones exist.
@@ -57,7 +57,7 @@ Nothing here guarantees rankings. The goal is a site that is crawlable, fast, tr
 **Internal linking.** Industries is now in the footer and linked from the homepage and services. Footer service links go to each service's section (`/services/#…`). Contextual links connect services ↔ estimator ↔ pricing ↔ terms ↔ industries ↔ blueprints. Every indexable page has 11+ internal inbound links.
 
 **Technical**
-- `.htaccess`: HTTPS and non-www redirects, /index.html → /, custom 404 page, gzip, 1-year immutable caching for fingerprinted assets, security headers, and `_src/`, `vendor/` and `.md` files blocked from the web.
+- `.htaccess`: HTTPS and non-www redirects, /index.html → /, custom 404 page, gzip, 1-year immutable caching for fingerprinted assets, security headers, and `src/`, `vendor/` and `.md` files blocked from the web.
 - `robots.txt` and `sitemap.xml` point to thinkvistar.com. The sitemap lists 10 indexable URLs.
 - Canonical tags on all indexable pages. `/case-study/` and `404.html` are `noindex, follow`.
 - `<main>` landmark, skip link, semantic breadcrumbs and correct heading levels on every page.
@@ -76,7 +76,7 @@ Nothing here guarantees rankings. The goal is a site that is crawlable, fast, tr
 - 10 indexable pages: all titles and descriptions unique; exactly one H1 each; no heading-level skips; canonicals self-referencing on thinkvistar.com.
 - 0 broken internal links; 0 orphan pages; all images have alt text and dimensions.
 - All JSON-LD parses. FAQPage content matches the visible FAQ text (same source).
-- 0 console errors and 0 failed requests on desktop (1366 px) and mobile (390 px), with no horizontal overflow (`_src/check.mjs`).
+- 0 console errors and 0 failed requests on desktop (1366 px) and mobile (390 px), with no horizontal overflow (`src/check.mjs`).
 - Not verified: indexing status. Nothing can be checked in Google until the domain is live and added to Search Console.
 
 ## 4. Needs your action
@@ -86,7 +86,7 @@ Nothing here guarantees rankings. The goal is a site that is crawlable, fast, tr
 3. **Confirm the postal code 401203** and the address format; they appear in the footer, contact page and schema.
 4. Review the FAQ answers, especially "we're happy to sign your NDA", response times and the timeline ranges. They are commitments.
 5. Create a **Google Business Profile** with the same name, address and phone number, and ask your three clients for genuine Google reviews.
-6. Biggest trust wins still missing: **real case studies** for Viora Healthcare, Viva Homecare and The Walk (what you built, and outcomes they agree to publish), **founder/team bios** with LinkedIn links, and real testimonials. Add them to `_src/site-data.json` (`projects` with `isPlaceholder: false`, `testimonials.items`).
+6. Biggest trust wins still missing: **real case studies** for Viora Healthcare, Viva Homecare and The Walk (what you built, and outcomes they agree to publish), **founder/team bios** with LinkedIn links, and real testimonials. Add them to `src/site-data.json` (`projects` with `isPlaceholder: false`, `testimonials.items`).
 7. Optional: publish your own **price ranges** on /services/#pricing. Competitors rarely do, and buyers search for it heavily. Only you can set them.
 8. Update the Facebook link in `site-data.json` if there is a Thinkvistar page.
 
@@ -124,21 +124,21 @@ When real client projects exist, give each its own static URL (for example `/pro
 - Sitemap `<lastmod>` was set to the build date for every page on every build (Google learns to ignore that).
 
 ### Changes made
-- **7 service pages** (`/services/<slug>/`), each with its own title, description, H1, use cases, deliverables, delivery steps, technology, timeline, 4 FAQs, related-service links and `Service` + `FAQPage` + `BreadcrumbList` schema: saas-development, mobile-app-development, web-application-development, headless-cms-development, ai-automation, legacy-application-modernization, cloud-support-maintenance. Content lives in `_src/service-pages.mjs`.
+- **7 service pages** (`/services/<slug>/`), each with its own title, description, H1, use cases, deliverables, delivery steps, technology, timeline, 4 FAQs, related-service links and `Service` + `FAQPage` + `BreadcrumbList` schema: saas-development, mobile-app-development, web-application-development, headless-cms-development, ai-automation, legacy-application-modernization, cloud-support-maintenance. Content lives in `src/service-pages.mjs`.
 - **Local page** `/software-development-company-mumbai/` built on the real office address, with directions, service areas and 4 FAQs. Linked from the footer on every page and from About.
 - Internal links: service cards, footer, timeline table and FAQs now point to the service pages. `/services/` emits an `ItemList` of them.
 - Organization schema: `alternateName` (Thinkvistar LLP / Think Vistar / ThinkVistar), `slogan`, `hasOfferCatalog` linking the services.
 - Homepage title now leads with the brand: "Thinkvistar | Custom Software, SaaS & App Development Company".
-- Sitemap `<lastmod>` now changes only when a page's content changes (`_src/lastmod.json`).
-- Search Console / Bing verification tags supported via `SITE.verification` in `_src/pages.mjs`. `geo.region` meta added.
-- **IndexNow** for Bing/Yandex: key file in the site root, and `node _src/indexnow.mjs` pings all sitemap URLs after a deploy.
+- Sitemap `<lastmod>` now changes only when a page's content changes (`src/lastmod.json`).
+- Search Console / Bing verification tags supported via `SITE.verification` in `src/pages.mjs`. `geo.region` meta added.
+- **IndexNow** for Bing/Yandex: key file in the site root, and `node src/indexnow.mjs` pings all sitemap URLs after a deploy.
 - Typography: Plus Jakarta Sans (self-hosted, 27 KB) for headings, refined Inter body text.
 - Audit after the build: 18 indexable pages, all titles ≤ 62 characters and descriptions ≤ 160, all unique, one H1 each, self-canonicals, every indexable page in the sitemap, 0 broken internal links, 0 images without alt, 0 console errors (desktop and mobile).
 
 ### Off-page plan (must be done by you, in this order)
 1. **Deploy** the rebuilt site to thinkvistar.com.
 2. **Google Search Console**: add a Domain property for thinkvistar.com (DNS TXT record in Hostinger) → submit `sitemap.xml` → URL Inspection → "Request indexing" for the homepage, /services/, each service page and the Mumbai page.
-3. **Bing Webmaster Tools**: import from Search Console, then run `node _src/indexnow.mjs`.
+3. **Bing Webmaster Tools**: import from Search Console, then run `node src/indexnow.mjs`.
 4. **Google Business Profile** for "Thinkvistar LLP" at the exact footer address and phone, category "Software company", website link to /software-development-company-mumbai/. Ask your 3 clients for genuine Google reviews. This is the biggest single lever for local searches.
 5. **Client backlinks**: add "Website by Thinkvistar" (linking to https://thinkvistar.com/) in the footers of viorahealthcare.in, vivahomecare.in and thewalkphysio.com. You built them, so this is legitimate and fast.
 6. **Consistent listings (same name, address, phone everywhere)**: LinkedIn company page (website field + posts), Clutch, GoodFirms, DesignRush, Justdial, Sulekha, IndiaMART, Bing Places, Apple Business Connect.
@@ -146,3 +146,17 @@ When real client projects exist, give each its own static URL (for example `/pro
 8. **Measure** monthly in Search Console: pages indexed, queries, impressions, average position.
 
 Realistic expectation: brand searches ("thinkvistar") usually start working within days to a few weeks of Search Console submission. Competitive terms like "software development company Mumbai" take months and depend mostly on steps 4–7.
+
+## 5. Search + AI-search layer (added with the src/static restructure)
+
+**Classic SEO (checked on every build by `npm run verify`):** unique title and description per page, one H1, canonical, Open Graph/Twitter, valid JSON-LD, alt text on every image, sitemap and canonicals in sync, and `dateModified` in WebPage schema.
+
+**Brand name:** Organization schema now carries `alternateName` (Thinkvistar LLP, Think Vistar, ThinkVistar), a `Brand`, and a `disambiguatingDescription`, so search engines and AI models connect all spellings to one entity. Every title ends in or contains "Thinkvistar".
+
+**AI search (ChatGPT, Gemini, Claude, Perplexity, Copilot, Apple, Meta):**
+- `robots.txt` explicitly allows GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-SearchBot, Claude-User, Google-Extended, PerplexityBot, Perplexity-User, Bingbot, Applebot(-Extended), Meta-ExternalAgent, Amazonbot, DuckAssistBot and CCBot.
+- `/llms.txt` (curated index) and `/llms-full.txt` (company facts + every FAQ in plain text) are generated at build from the same data as the pages.
+- Content is pre-rendered HTML with FAQ blocks and FAQPage schema, which is the format answer engines quote most easily.
+
+**Off-site steps only you can do** (these decide whether AI tools and Google trust and cite you; see the list in the chat reply):
+Search Console + Bing Webmaster Tools, Google Business Profile, a LinkedIn company page with the same name/address/phone, Clutch/GoodFirms/Crunchbase listings, real client reviews, and links from your clients' sites. Then paste the verification tokens into `SITE.verification` in `src/pages.mjs`.

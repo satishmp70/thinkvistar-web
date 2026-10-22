@@ -1,0 +1,8 @@
+# LF everywhere so builds are identical on Windows, Linux and CI.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.ico binary
+*.woff2 binary

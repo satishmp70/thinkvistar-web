@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /api/
-Disallow: /_src/
-
-Sitemap: https://thinkvistar.com/sitemap.xml

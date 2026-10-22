@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Premium visual layer + motion (loaded after site.css and additions.css)
+   ========================================================================== */
+@keyframes aurora{0%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(4%,-3%,0) scale(1.08)}100%{transform:translate3d(-3%,3%,0) scale(1.02)}}
+@keyframes gradientFlow{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+@keyframes heroFloat{0%,100%{translate:0 0}50%{translate:0 -12px}}
+@keyframes floatY{0%,100%{translate:0 0}50%{translate:0 -8px}}
+@keyframes pulseDot{0%{box-shadow:0 0 0 0 rgba(34,197,94,.5)}100%{box-shadow:0 0 0 10px rgba(34,197,94,0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+@keyframes fadeScale{from{opacity:0;transform:scale(.96) translateY(16px)}to{opacity:1;transform:none}}
+
+/* ---- Light, simple heroes (home + every inner page) ---- */
+.hero-section,.page-hero{background:linear-gradient(180deg,#f4f7fd 0%,#ffffff 100%);border-bottom:1px solid var(--border);isolation:isolate;overflow:hidden}
+.hero-section:before,.page-hero:before{display:block;content:"";position:absolute;inset:0;width:auto;clip-path:none;z-index:-1;
+  background:radial-gradient(50% 70% at 88% 0%,rgba(37,99,235,.10),transparent 70%),radial-gradient(40% 60% at 0% 100%,rgba(6,182,212,.07),transparent 70%)}
+.hero-section:after,.page-hero:after{display:none}
+.hero-section{padding:56px 0 72px}
+@media(min-width:1024px){.hero-section{padding:88px 0 96px}.page-hero{padding:64px 0 72px}}
+.hero-gradient-text{background:linear-gradient(90deg,#1d4ed8,#2563eb 45%,#0891b2);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* Entrance animation for hero content */
+.js .hero-content>*,.js .page-hero .container>*{animation:fadeUp .8s cubic-bezier(.2,.7,.2,1) both}
+.js .hero-content>:nth-child(2),.js .page-hero .container>:nth-child(2){animation-delay:.08s}
+.js .hero-content>:nth-child(3),.js .page-hero .container>:nth-child(3){animation-delay:.16s}
+.js .hero-content>:nth-child(4),.js .page-hero .container>:nth-child(4){animation-delay:.24s}
+.js .hero-content>:nth-child(5),.js .page-hero .container>:nth-child(5){animation-delay:.32s}
+.js .hero-visual-wrapper{animation:fadeScale 1s .2s cubic-bezier(.2,.7,.2,1) both}
+
+/* Hero mockup: glow, 3D perspective, float, glass badges */
+.hero-visual-wrapper{padding:0;perspective:1600px}
+.hero-visual-wrapper:before{left:8%;right:8%;top:14%;bottom:-2%;width:auto;height:auto;border-radius:50%;background:radial-gradient(closest-side,rgba(37,99,235,.22),transparent);filter:blur(30px)}
+.hero-visual-frame{border:1px solid var(--border);box-shadow:0 40px 80px -30px rgba(16,24,40,.35),0 12px 24px -12px rgba(16,24,40,.12);transform:rotateY(-6deg) rotateX(3deg);transition:transform .6s cubic-bezier(.2,.7,.2,1);animation:heroFloat 7s ease-in-out infinite}
+.hero-float{position:absolute;z-index:2;display:none;align-items:center;gap:10px;padding:10px 14px;border-radius:var(--radius-lg);background:rgba(255,255,255,.92);border:1px solid var(--border);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:var(--navy);font-size:.875rem;font-weight:600;white-space:nowrap;box-shadow:0 16px 36px -16px rgba(16,24,40,.3);animation:floatY 6s ease-in-out infinite}
+@media(min-width:1024px){.hero-float{display:flex}}
+.hero-float-1{top:-7%;left:-4%}
+.hero-float-2{bottom:4%;left:-9%;animation-delay:-2s}
+.hero-float-3{top:26%;right:-5%;animation-delay:-4s}
+.hero-float-dot{width:8px;height:8px;border-radius:50%;background:#22c55e;animation:pulseDot 1.8s ease-out infinite}
+.hero-float-icon{display:inline-grid;place-items:center;min-width:26px;height:26px;padding:0 5px;border-radius:var(--radius-sm);background:linear-gradient(135deg,#2563eb,#06b6d4);color:#fff;font-size:.75rem;font-weight:800}
+
+/* ---- Eyebrow labels as pills ---- */
+.section-badge,.hero-badge{padding:6px 12px 6px 10px;border-radius:var(--radius-full);background:var(--blue-light);border:1px solid var(--blue-border);font-size:.75rem;letter-spacing:.12em;gap:8px}
+.section-badge:before,.hero-badge:before{width:6px;height:6px;border-radius:50%;background:currentColor;box-shadow:0 0 0 3px rgba(37,99,235,.18)}
+.text-center>.section-badge:after,.cta-card .section-badge:after{display:none}
+.cta-card .section-badge,.cta-banner .section-badge{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16);color:#93c5fd}
+.cta-card .section-badge:before{background:#7dd3fc}
+
+/* ---- Buttons: gradient, glow and a light sweep on hover ---- */
+.btn-primary{background:linear-gradient(135deg,#2563eb 0%,#1d4ed8 55%,#4338ca 100%);border-color:transparent;box-shadow:0 10px 26px -10px rgba(37,99,235,.7),inset 0 1px 0 rgba(255,255,255,.18);position:relative;overflow:hidden;isolation:isolate}
+.btn-primary:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%);transform:translateX(-130%);transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.btn-primary:hover{background:linear-gradient(135deg,#2563eb 0%,#1d4ed8 55%,#4338ca 100%);border-color:transparent;transform:translateY(-2px);box-shadow:0 16px 34px -12px rgba(37,99,235,.8),inset 0 1px 0 rgba(255,255,255,.18)}
+.btn-primary:hover:after{transform:translateX(130%)}
+.btn-white{box-shadow:0 10px 30px -12px rgba(0,0,0,.5)}
+.btn-white:hover{transform:translateY(-2px)}
+
+/* ---- Cards: gradient icons, cursor spotlight, lift ---- */
+.icon-tile,.contact-icon-wrap{background:linear-gradient(135deg,#2563eb,#4f46e5);color:#fff;box-shadow:0 10px 22px -10px rgba(37,99,235,.7);transition:transform var(--t-normal),background var(--t-normal)}
+.card:hover .icon-tile{background:linear-gradient(135deg,#1d4ed8,#06b6d4);color:#fff;transform:rotate(-6deg) scale(1.06)}
+@media(hover:hover){.card:not(.service-card-cta){background-image:radial-gradient(420px circle at var(--mx,50%) var(--my,-60%),rgba(37,99,235,.08),transparent 45%)}}
+.card:hover{border-color:rgba(37,99,235,.3)}
+.team-avatar,.process-step-number{background:linear-gradient(135deg,#2563eb,#4f46e5);box-shadow:0 8px 20px -8px rgba(37,99,235,.6)}
+
+/* ---- Dark bands: animated glow ---- */
+.stats-band{background-size:160% 160%;animation:gradientFlow 14s ease-in-out infinite}
+.cta-card,.cta-banner{background:linear-gradient(120deg,#07122a,#0f2a5c,#0e4a6e,#1e1b4b,#07122a);background-size:300% 300%;animation:gradientFlow 18s ease infinite}
+.cta-card:before,.cta-banner:before{display:none}
+.cta-card .cta-headline{font-size:clamp(1.6rem,2.6vw + .6rem,2.4rem)}
+.service-card-cta{background:linear-gradient(145deg,#07122a,#0f2a5c,#1e1b4b);background-size:200% 200%;animation:gradientFlow 12s ease infinite}
+
+/* ---- Footer accent line, scroll progress ---- */
+.site-footer{position:relative}
+.site-footer:before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(96,165,250,.7),transparent)}
+.scroll-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:2000;background:linear-gradient(90deg,#2563eb,#06b6d4,#a78bfa);transform-origin:0 50%;transform:scaleX(0);pointer-events:none}
+
+/* ---- Scroll reveal ----
+   Content is visible by default. motion.js adds .reveal-armed only to elements that start below
+   the fold, after its observer exists, so a failed or blocked script never hides content. */
+.reveal{transition:opacity .75s cubic-bezier(.2,.7,.2,1),translate .75s cubic-bezier(.2,.7,.2,1),filter .75s cubic-bezier(.2,.7,.2,1)}
+.reveal.reveal-armed:not(.active){opacity:0;translate:0 28px;filter:blur(6px)}
+
+@media(prefers-reduced-motion:reduce){
+  *,*:before,*:after{animation:none!important;transition:none!important}
+  .hero-visual-frame{transform:none}
+}
+
+/* ---- Header: clean white glass ---- */
+.site-header{background:rgba(255,255,255,.94);border-bottom:1px solid var(--border);-webkit-backdrop-filter:saturate(180%) blur(12px);backdrop-filter:saturate(180%) blur(12px)}
+.nav-link:after{height:2px;background:linear-gradient(90deg,#2563eb,#06b6d4)}
+
+/* ---- Bigger hero visual ---- */
+@media(min-width:1024px){.hero-grid{grid-template-columns:1fr 1.1fr;gap:56px}.hero-visual-wrapper{margin-right:-24px}}
+
+/* ---- Spacing: sections own their padding; edge margins inside must not add to it ---- */
+.section .container>:last-child,.section .container>:last-child>:last-child,.prose>:last-child,.industries-block>:last-child,.about-paragraphs>:last-child,.about-story-col>:last-child,.card>:last-child{margin-bottom:0}
+.prose>:first-child,.section .container>:first-child{margin-top:0}
+
+/* ---- Industries: rounded pills (restored), centered and wrapping ---- */
+.industry-chips{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:0;padding:0;list-style:none;text-align:left}
+.industry-chip{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;background:#fff;border:1px solid var(--border);border-radius:var(--radius-full);font-size:.875rem;font-weight:600;color:var(--navy);box-shadow:0 1px 2px rgba(16,24,40,.04)}
+.industry-chip:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--blue);flex-shrink:0;transform:none}
+.industry-chip:last-child{background:var(--blue-light);border-color:var(--blue-border);color:var(--blue)}
+@media(max-width:639px){.industry-chips{display:flex;gap:8px}.industry-chip{padding:7px 12px;font-size:.875rem}}
