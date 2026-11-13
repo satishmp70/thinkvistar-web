@@ -1,0 +1,239 @@
+# Thinkvistar — full reference
+
+Thinkvistar (legal name Thinkvistar LLP; also written "Think Vistar" or "ThinkVistar") is a senior-led software development company in the Mumbai Metropolitan Region, India.
+Services: SaaS development company; mobile app development company; web application development company; headless CMS development; AI automation services; legacy application modernization; software maintenance and support services.
+Founded: 2026. Address: Yashwant Gaurav Phase 1, Nalasopara West, Palghar, Maharashtra 401203, India.
+Email: hello@thinkvistar.com. Phone/WhatsApp: +91 70210 67824. Website: https://thinkvistar.com/
+Works with clients across India and remotely with teams in the US, UK and Europe. Aims to reply to enquiries within one business day.
+Once the agreed payment is received, the bespoke source code, designs and database schemas built for a client become the client’s property; Thinkvistar keeps its pre-existing tools and libraries and licenses them to the client as part of the delivered work (see Terms).
+
+## Thinkvistar | Custom Software, SaaS & App Development Company
+URL: https://thinkvistar.com/
+Thinkvistar is a senior-led software development company near Mumbai, India, building SaaS platforms, web and mobile apps, CMS websites and AI automation.
+
+Q: What does Thinkvistar do?
+A: Thinkvistar is a senior-led software development company. We design, build and support SaaS platforms, web and mobile apps, headless CMS websites and AI automation — from the first architecture decision through launch and ongoing support. See our services for what each engagement includes.
+
+Q: Where are you based, and do you work with clients outside India?
+A: Our office is in Nalasopara West (Palghar district), in the Mumbai Metropolitan Region, Maharashtra. We work with clients across India and remotely with teams in the US, UK and Europe, using scheduled calls in overlapping hours, weekly demos on a staging site and written progress updates.
+
+Q: How long does it take to build a SaaS product or web application?
+A: A focused first version usually takes about 4–8 weeks; larger platforms are delivered in phases over several months. The exact timeline depends on features, integrations and security requirements. Our project estimator gives you a timeline range in about a minute, and the typical timelines table shows ranges for each service.
+
+Q: How much does custom software development cost?
+A: Cost depends on scope, integrations, compliance needs and how quickly you need to launch, so we quote each project after a short discovery call. You receive a written estimate with milestones before any work begins, and invoices follow those milestones. Read how our pricing works.
+
+Q: Who owns the source code?
+A: You do. Under our terms, once the agreed payment is received, the bespoke source code, designs and database schemas built for you are assigned to you, and we hand over repositories, documentation and access. Our pre-existing tools and libraries stay ours and are licensed to you as part of the delivered work.
+
+## SaaS, Web & Mobile App Development Services | Thinkvistar
+URL: https://thinkvistar.com/services/
+SaaS development, web and mobile apps, headless CMS, legacy modernization, AI automation and cloud support — with typical timelines, pricing model and FAQs.
+
+Q: Which engagement model is right for my project?
+A: Choose a fixed-scope project when requirements are clear and you want a fixed set of deliverables; a dedicated engineering pod when your roadmap is evolving and you want senior engineers inside your sprints; or an architecture review when you need an expert assessment of existing code, security or scalability before committing to a larger build.
+
+Q: Will you sign an NDA before we share our idea?
+A: Yes. We are happy to sign your NDA (or provide ours) before a detailed discussion. Our terms also commit both parties to confidentiality during an engagement and for three years afterwards, and for as long as trade secrets remain secret and personal data remains held.
+
+Q: Can you take over or improve an existing codebase?
+A: Yes. We start with a short code and infrastructure review, document the risks we find, and then either stabilise and extend the existing system or plan a staged modernization — without a risky big-bang rewrite.
+
+Q: What happens after launch?
+A: Every project includes a 30-day warranty after completion, during which we fix defects against the agreed acceptance criteria at no extra cost. After that, you can move to a support plan covering monitoring, security patching, backups and ongoing improvements — see Cloud Support & Maintenance.
+
+Q: Which technologies do you work with?
+A: Mainly TypeScript, React and Next.js on the front end; Node.js, Python (FastAPI) and Go on the back end; PostgreSQL, Redis and MongoDB for data; and AWS, Vercel, Cloudflare and Docker for hosting. See the full technology stack and how we choose it.
+
+## Industry Software: Healthcare, Fintech, Retail | Thinkvistar
+URL: https://thinkvistar.com/industries/
+How Thinkvistar builds software for healthcare, fintech, e-commerce, logistics, real estate and SaaS businesses — typical projects, data rules and integrations.
+
+## Tech Stack: React, Next.js, Node.js & AWS | Thinkvistar
+URL: https://thinkvistar.com/tech-stack/
+The languages, frameworks, databases and cloud tools Thinkvistar builds with — and how we choose the right stack for your product, budget and team.
+
+Q: Can you work with our existing technology stack?
+A: Usually, yes. Beyond the tools listed here we regularly work inside existing codebases. If your system uses a technology we would not recommend for the long term, we explain the trade-offs and plan a gradual migration rather than forcing a rewrite.
+
+Q: Why do you mostly use TypeScript, React and Node.js?
+A: They are mature, widely adopted and well supported, which makes your product easier to hire for and maintain after handover. We add Python where data processing or AI work benefits from it, and Go where raw throughput matters.
+
+Q: Do you integrate AI models such as OpenAI or Claude?
+A: Yes. We integrate hosted large language models through their APIs, add retrieval over your own documents using vector search (for example pgvector), and wrap them in workflows with human review where accuracy matters. See AI & Automation.
+
+## Our Work: Clients & Solution Blueprints | Thinkvistar
+URL: https://thinkvistar.com/projects/
+The clients we work with, plus detailed solution blueprints showing how Thinkvistar approaches SaaS, headless CMS, logistics and fintech software projects.
+
+## About Thinkvistar — Senior-Led Software Studio near Mumbai
+URL: https://thinkvistar.com/about/
+Thinkvistar LLP is a senior-led software studio in Nalasopara West, near Mumbai. See how we work, our six-stage delivery process and our standards.
+
+## Software Project Timeline Estimator | Thinkvistar
+URL: https://thinkvistar.com/estimator/
+Estimate the timeline, architecture and tech stack for your SaaS, CMS, AI or custom software project in a minute — then review the result with an engineer.
+
+Q: How accurate is the estimate?
+A: It is a starting range, not a quote. It is based on the timelines we plan for similar projects, adjusted for scale, number of features, security level and delivery speed. After a discovery call we replace it with a written plan and milestones for your exact requirements.
+
+Q: Why does the estimator show a timeline but not a price?
+A: Price depends on details a form cannot capture — integrations, data migration, compliance and design depth. Rather than show a misleading number, we give you a timeline range and then a written quote after we understand the project. See how our pricing works.
+
+Q: What makes a software project take longer?
+A: The biggest factors are the number of user roles and features, third-party integrations (payments, ERPs, messaging), data migration from an old system, stricter security or compliance requirements, and slow feedback cycles. Phasing the launch — shipping a focused first version, then iterating — is the most reliable way to reduce time to market.
+
+Q: Can I get a detailed proposal?
+A: Yes. Use “Book Consultation With This Blueprint” or contact us with your estimator choices. We aim to reply within 24 hours on business days to schedule a call, then send a written proposal with scope, milestones and a quote.
+
+## Contact Us & Book a Consultation | Thinkvistar
+URL: https://thinkvistar.com/contact/
+Talk to our engineers about your project. Call or WhatsApp +91 70210 67824, email hello@thinkvistar.com or use the form. We aim to reply in a business day.
+
+Q: What happens after I send an enquiry?
+A: An engineer (not a salesperson) reads it and aims to reply within 24 hours on business days, usually with a few clarifying questions and a time for a call. After the call we send a written summary with a proposed approach, timeline range and next steps.
+
+Q: What should I include in my message?
+A: A short description of what you want to build or fix, who will use it, any existing systems or deadlines, and your budget range if you have one. Links to an existing product, designs or documents help us give a more accurate first response.
+
+Q: Can we talk on WhatsApp or by phone?
+A: Yes. Call or WhatsApp +91 70210 67824, or email hello@thinkvistar.com. For detailed briefs or RFPs, email is best.
+
+Q: How are payments structured?
+A: Invoices follow project milestones (for example: kick-off, design sign-off, staging demo and production handover) or a monthly retainer, and are payable within 14 days. Fees are exclusive of GST, which is added as required by Indian law. Full details are in our terms.
+
+## Privacy Policy | Thinkvistar
+URL: https://thinkvistar.com/privacy/
+How Thinkvistar LLP collects, uses, shares and protects personal information across its website and software services, and how to exercise your rights.
+
+## Terms & Conditions | Thinkvistar
+URL: https://thinkvistar.com/terms/
+The terms governing use of the Thinkvistar website and our software development services: scope, payments, intellectual property, confidentiality and support.
+
+## SaaS Development Company in India | Thinkvistar
+URL: https://thinkvistar.com/services/saas-development/
+SaaS product development from MVP to scale: multi-tenant architecture, subscription billing, dashboards and APIs. Senior engineers; you own the code.
+
+Q: How long does it take to build a SaaS MVP?
+A: A focused MVP usually takes 4–6 weeks: sign-up and onboarding, the core workflow, basic roles and subscription billing. Larger platforms are delivered in phases. Our estimator gives a timeline range for your scope.
+
+Q: Should my SaaS be multi-tenant from day one?
+A: Almost always, yes. Designing tenant isolation into the data model from the start is far cheaper than retrofitting it after you have customers. We choose between shared-schema and schema-per-tenant based on your compliance and scale needs.
+
+Q: Which payment gateways do you integrate?
+A: Stripe and Paddle for international customers, and Razorpay or Cashfree for Indian customers — including subscriptions, trials, coupons, GST invoices and failed-payment retries.
+
+Q: Do I own the code?
+A: Yes. Once the agreed payment is made, the source code, designs and database schemas built for you are yours, and we hand over repositories and documentation. See our terms.
+
+## Mobile App Development Company in Mumbai | Thinkvistar
+URL: https://thinkvistar.com/services/mobile-app-development/
+iOS and Android app development with React Native and Flutter: customer apps, field-staff apps and companion apps, launched on both app stores.
+
+Q: Should I build a native app or use React Native / Flutter?
+A: For most business apps, a cross-platform framework (React Native or Flutter) gives you iOS and Android from one codebase at a lower cost, with near-native performance. We recommend fully native development only for apps with heavy graphics, advanced hardware access or platform-specific features.
+
+Q: How long does it take to build a mobile app?
+A: A focused first release on both stores usually takes 6–10 weeks, including design, development, testing and store review. Apps with complex integrations or offline sync take longer.
+
+Q: Do you publish the app to the App Store and Google Play?
+A: Yes. We prepare the store listings, screenshots and privacy disclosures, and handle submission and review. The apps are published under your own developer accounts, so you own them.
+
+Q: Can you build an app for my existing website or platform?
+A: Yes. We reuse your existing backend where possible, add the APIs the app needs, and keep user accounts shared between web and mobile.
+
+## Web Application Development Company | Thinkvistar
+URL: https://thinkvistar.com/services/web-application-development/
+Custom web application development: customer portals, booking systems, dashboards and internal tools — fast, accessible and built on React, Next.js and Node.js.
+
+Q: What is the difference between a website and a web application?
+A: A website mainly presents information. A web application lets users do things — log in, book, pay, manage data or run a workflow — and needs a backend, a database and user accounts.
+
+Q: How much does a custom web application cost?
+A: It depends on the number of user roles and features, integrations and data migration. We give a written estimate with milestones after a short discovery call. Read how our pricing works.
+
+Q: Can you integrate with our existing systems?
+A: Yes. We regularly integrate payment gateways, ERPs, CRMs, accounting software and messaging services (SMS, email, WhatsApp) through their APIs.
+
+Q: Will the application be fast on mobile?
+A: Yes. We set performance budgets for Core Web Vitals and test on mid-range phones and slow networks, not only on fast office connections.
+
+## Headless CMS Development & Migration | Thinkvistar
+URL: https://thinkvistar.com/services/headless-cms-development/
+Headless CMS development and WordPress migration with Strapi, Sanity or Contentful and a fast Next.js front end — editor-friendly, multilingual and SEO-safe.
+
+Q: What is a headless CMS?
+A: A headless CMS stores and manages content but does not control how it is displayed. The content is delivered through an API to a separate front end — usually faster, more secure and easier to reuse across a website and apps than a traditional CMS.
+
+Q: Will we lose Google rankings if we migrate from WordPress?
+A: Not if the migration is planned properly. We keep URLs where possible, map every changed URL with a 301 redirect, carry over titles and meta descriptions, and check indexing after launch.
+
+Q: Strapi, Sanity or Contentful — which should we choose?
+A: Strapi is open source and can be self-hosted, which keeps running costs low. Sanity and Contentful are hosted services with excellent editing experiences but monthly fees that grow with usage. We recommend one after understanding your team, budget and hosting preferences.
+
+Q: Can our marketing team edit pages without developers?
+A: Yes. We build reusable page blocks so editors can create and rearrange pages, with live preview before publishing.
+
+## AI Automation & LLM Integration Services | Thinkvistar
+URL: https://thinkvistar.com/services/ai-automation/
+AI automation for businesses: document extraction, AI assistants on your own data and workflow automation with OpenAI and Claude — with human review.
+
+Q: Is our data safe when using AI models?
+A: We choose provider plans and settings under which, according to the provider’s current published terms, your data is not used to train models; we restrict what is sent to the model and keep documents in your own infrastructure. Provider terms change, so we confirm them for your project. For sensitive data we can use self-hosted open models.
+
+Q: How accurate is AI document extraction?
+A: It depends on document quality and variety. We measure accuracy on your real documents during the prototype, and add human review for low-confidence results so errors are caught before they reach your systems.
+
+Q: Which AI models do you work with?
+A: Hosted models such as OpenAI GPT, Anthropic Claude and Google Gemini through their APIs, and open models when data must stay on your servers. We choose based on accuracy, cost and privacy requirements.
+
+Q: Where should a small business start with AI automation?
+A: Start with one repetitive, document-heavy task where time spent is easy to measure — such as processing invoices or answering common questions — prove it works, then expand.
+
+## Legacy Application Modernization Services | Thinkvistar
+URL: https://thinkvistar.com/services/legacy-application-modernization/
+Modernise legacy PHP, .NET or desktop systems in stages — stabilise, migrate data and move to a modern cloud architecture without a risky big-bang rewrite.
+
+Q: Should we rewrite our system from scratch?
+A: Usually not. Full rewrites are slow and risky because the old system keeps changing and hidden business rules get lost. Replacing it module by module lets you get value early and reduce risk.
+
+Q: Will our business be interrupted during modernisation?
+A: We plan to minimise downtime: the old and new systems run side by side, traffic moves over gradually, and every step has a rollback plan.
+
+Q: Can you work with code nobody on our team understands?
+A: Yes. We start by documenting how the system behaves, add tests around critical workflows and only then change it.
+
+Q: How long does legacy modernisation take?
+A: The first modernised module typically takes 6–8 weeks. Larger programmes run in phases, prioritised by business value and risk.
+
+## Software Maintenance & Cloud Support Services | Thinkvistar
+URL: https://thinkvistar.com/services/cloud-support-maintenance/
+Software maintenance and cloud support with agreed response times: monitoring, security patching, backups, DevOps and ongoing improvements.
+
+Q: What does a software maintenance plan include?
+A: Monitoring and alerting, security patching, dependency updates, backups, bug fixes within agreed response times, and a set number of hours each month for improvements.
+
+Q: Can you support software built by another company?
+A: Yes. We start with a health check of the code and infrastructure, document the risks we find, and fix the urgent ones before regular support begins.
+
+Q: What response times do you offer?
+A: Response times are agreed in your support plan based on how critical the system is — faster for production outages, slower for minor requests.
+
+Q: Is support included after a new project launches?
+A: Every project includes a 30-day warranty after completion for defects against the agreed acceptance criteria. After that you can move to a monthly support plan.
+
+## Software Development Company in Mumbai | Thinkvistar
+URL: https://thinkvistar.com/software-development-company-mumbai/
+Senior-led software development company in the Mumbai region (Nalasopara West). SaaS, web and mobile apps, websites and AI automation. Meet us in person.
+
+Q: Where is your office?
+A: Our office is at Yashwant Gaurav Phase 1, Nalasopara West, Palghar, Maharashtra 401203 — in the Mumbai Metropolitan Region, on the Western Railway line. Meetings are by appointment; contact us to arrange one.
+
+Q: Can we meet in person?
+A: Yes. We meet clients in Mumbai, Thane and Vasai-Virar for kick-offs, workshops and demos, and run day-to-day work through calls, a shared staging site and written weekly updates.
+
+Q: Do you only work with Mumbai businesses?
+A: No. We work with clients across India and remotely with teams in the US, UK and Europe. Being in Mumbai simply makes in-person collaboration easy for local clients.
+
+Q: How do we get started?
+A: Send us a short description of your project by form, email or WhatsApp. An engineer aims to reply within 24 hours on business days with questions and a time for a call, then we send a written scope, timeline range and quote.

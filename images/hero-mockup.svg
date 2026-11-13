@@ -1,0 +1,229 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 560" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Refined Background Gradients -->
+    <linearGradient id="heroCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e131f" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#080b12" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="panelBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161f30" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0c121e" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="chartAreaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.4"/>
+      <stop offset="60%" stop-color="#3b82f6" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="chartAreaGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.0"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="32" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="frameShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="24" stdDeviation="32" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glows -->
+  <circle cx="720" cy="140" r="160" fill="#0284c7" opacity="0.12" filter="url(#softGlow)"/>
+  <circle cx="160" cy="420" r="180" fill="#6366f1" opacity="0.10" filter="url(#softGlow)"/>
+
+  <!-- Main Window Frame -->
+  <g filter="url(#frameShadow)">
+    <rect x="24" y="20" width="832" height="520" rx="16" fill="url(#heroCardBg)" stroke="#1e293b" stroke-width="1.2"/>
+
+    <!-- Window Titlebar Header -->
+    <path d="M 24 36 Q 24 20 40 20 L 840 20 Q 856 20 856 36 L 856 68 L 24 68 Z" fill="#0c111c" fill-opacity="0.95"/>
+    <line x1="24" y1="68" x2="856" y2="68" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Window Traffic Lights -->
+    <circle cx="52" cy="44" r="5" fill="#f87171"/>
+    <circle cx="70" cy="44" r="5" fill="#fbbf24"/>
+    <circle cx="88" cy="44" r="5" fill="#34d399"/>
+
+    <!-- Breadcrumb & Status Pill -->
+    <rect x="120" y="34" width="340" height="22" rx="6" fill="#151d2c" fill-opacity="0.8" stroke="#2a384d" stroke-width="0.75"/>
+    <circle cx="132" cy="45" r="3" fill="#10b981"/>
+    <text x="144" y="49" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="500">thinkvistar.cloud / us-east-1 / cluster-telemetry</text>
+
+    <!-- Top Right Controls -->
+    <rect x="700" y="33" width="140" height="24" rx="6" fill="#0284c7" fill-opacity="0.12" stroke="#0284c7" stroke-opacity="0.3"/>
+    <circle cx="714" cy="45" r="3" fill="#0284c7"/>
+    <text x="724" y="49" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="10" font-weight="600">LIVE FEED • 12ms</text>
+
+    <!-- LEFT SIDEBAR -->
+    <rect x="24" y="68" width="176" height="472" fill="#090d16" fill-opacity="0.85"/>
+    <line x1="200" y1="68" x2="200" y2="540" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Sidebar Profile / Org -->
+    <rect x="40" y="84" width="28" height="28" rx="8" fill="url(#brandGrad)"/>
+    <text x="48" y="103" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="800">TV</text>
+    <text x="76" y="97" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Thinkvistar Cloud</text>
+    <text x="76" y="108" fill="#64748b" font-family="system-ui, sans-serif" font-size="9.5">Senior Practice</text>
+
+    <!-- Navigation Items -->
+    <g transform="translate(36, 126)">
+      <!-- Active Item: Overview -->
+      <rect x="0" y="0" width="152" height="32" rx="8" fill="#0284c7" fill-opacity="0.14" stroke="#0284c7" stroke-opacity="0.35"/>
+      <rect x="12" y="10" width="12" height="12" rx="3" fill="#0284c7"/>
+      <text x="32" y="21" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11.5" font-weight="600">Live Telemetry</text>
+
+      <!-- Nav item 2 -->
+      <rect x="12" y="46" width="12" height="12" rx="3" fill="#64748b" fill-opacity="0.6"/>
+      <text x="32" y="57" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11.5" font-weight="500">Cluster Nodes</text>
+
+      <!-- Nav item 3 -->
+      <rect x="12" y="82" width="12" height="12" rx="3" fill="#64748b" fill-opacity="0.6"/>
+      <text x="32" y="93" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11.5" font-weight="500">API Gateways</text>
+
+      <!-- Nav item 4 -->
+      <rect x="12" y="118" width="12" height="12" rx="3" fill="#64748b" fill-opacity="0.6"/>
+      <text x="32" y="129" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11.5" font-weight="500">Usage &amp; Billing</text>
+
+      <!-- Nav item 5 -->
+      <rect x="12" y="154" width="12" height="12" rx="3" fill="#64748b" fill-opacity="0.6"/>
+      <text x="32" y="165" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11.5" font-weight="500">Audit Logs</text>
+    </g>
+
+    <!-- Sidebar Bottom Status Widget -->
+    <rect x="36" y="440" width="152" height="68" rx="10" fill="#101726" stroke="#1e293b" stroke-width="1"/>
+    <text x="48" y="460" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10" font-weight="600">SYSTEM HEALTH</text>
+    <circle cx="52" cy="482" r="4" fill="#10b981"/>
+    <text x="62" y="486" fill="#34d399" font-family="system-ui, sans-serif" font-size="11" font-weight="600">All Nodes 100%</text>
+    <text x="48" y="500" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="9">Latency: 14ms (p99)</text>
+
+    <!-- MAIN DASHBOARD CONTENT AREA -->
+    <!-- Metric Row (4 Cards) -->
+    <g transform="translate(216, 84)">
+      <!-- Card 1: Throughput -->
+      <rect x="0" y="0" width="150" height="74" rx="10" fill="url(#panelBg)" stroke="#1e293b" stroke-width="1"/>
+      <text x="14" y="20" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10" font-weight="600">INGESTION RATE</text>
+      <text x="14" y="46" fill="#f8fafc" font-family="'JetBrains Mono', monospace" font-size="19" font-weight="700">14.8k <tspan font-size="11" fill="#64748b">/s</tspan></text>
+      <text x="14" y="63" fill="#34d399" font-family="system-ui, sans-serif" font-size="10" font-weight="600">↑ 18.4% vs avg</text>
+
+      <!-- Card 2: Active Tenants -->
+      <rect x="158" y="0" width="150" height="74" rx="10" fill="url(#panelBg)" stroke="#1e293b" stroke-width="1"/>
+      <text x="172" y="20" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10" font-weight="600">ACTIVE TENANTS</text>
+      <text x="172" y="46" fill="#f8fafc" font-family="'JetBrains Mono', monospace" font-size="19" font-weight="700">324</text>
+      <text x="172" y="63" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="10" font-weight="600">● 100% Connected</text>
+
+      <!-- Card 3: Invoicing Synced -->
+      <rect x="316" y="0" width="150" height="74" rx="10" fill="url(#panelBg)" stroke="#1e293b" stroke-width="1"/>
+      <text x="330" y="20" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10" font-weight="600">MRR RECONCILED</text>
+      <text x="330" y="46" fill="#f8fafc" font-family="'JetBrains Mono', monospace" font-size="19" font-weight="700">$184.2k</text>
+      <text x="330" y="63" fill="#34d399" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Stripe Sync OK</text>
+
+      <!-- Card 4: Error Rate -->
+      <rect x="474" y="0" width="150" height="74" rx="10" fill="url(#panelBg)" stroke="#1e293b" stroke-width="1"/>
+      <text x="488" y="20" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10" font-weight="600">ERROR RATE</text>
+      <text x="488" y="46" fill="#f8fafc" font-family="'JetBrains Mono', monospace" font-size="19" font-weight="700">0.001%</text>
+      <text x="488" y="63" fill="#a78bfa" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Zero 5xx Alerts</text>
+    </g>
+
+    <!-- BIG CHART PANEL -->
+    <g transform="translate(216, 172)">
+      <rect x="0" y="0" width="418" height="190" rx="12" fill="url(#panelBg)" stroke="#1e293b" stroke-width="1"/>
+      
+      <!-- Chart Header -->
+      <text x="16" y="24" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Event Ingestion &amp; Network Bandwidth (24h)</text>
+      <text x="16" y="38" fill="#64748b" font-family="system-ui, sans-serif" font-size="9.5">Streaming telemetry across 8 microservice clusters</text>
+
+      <!-- Chart Legend -->
+      <circle cx="330" cy="22" r="3.5" fill="#0284c7"/>
+      <text x="338" y="25" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9.5">Events/sec</text>
+      <circle cx="385" cy="22" r="3.5" fill="#6366f1"/>
+      <text x="393" y="25" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9.5">Queue</text>
+
+      <!-- Grid Lines -->
+      <line x1="16" y1="65" x2="402" y2="65" stroke="#1e293b" stroke-dasharray="3,3" stroke-width="1"/>
+      <line x1="16" y1="105" x2="402" y2="105" stroke="#1e293b" stroke-dasharray="3,3" stroke-width="1"/>
+      <line x1="16" y1="145" x2="402" y2="145" stroke="#1e293b" stroke-dasharray="3,3" stroke-width="1"/>
+
+      <!-- Chart 2 Fill & Line (Purple) -->
+      <path d="M 16 160 Q 60 145 110 152 T 200 130 T 290 142 T 370 115 T 402 125 L 402 170 L 16 170 Z" fill="url(#chartAreaGrad2)"/>
+      <path d="M 16 160 Q 60 145 110 152 T 200 130 T 290 142 T 370 115 T 402 125" fill="none" stroke="#6366f1" stroke-width="1.8"/>
+
+      <!-- Chart 1 Fill & Line (Cyan Glowing) -->
+      <path d="M 16 148 Q 60 115 110 128 T 200 85 T 280 98 T 350 68 T 402 75 L 402 170 L 16 170 Z" fill="url(#chartAreaGrad)"/>
+      <path d="M 16 148 Q 60 115 110 128 T 200 85 T 280 98 T 350 68 T 402 75" fill="none" stroke="#0284c7" stroke-width="2.5"/>
+
+      <!-- Interactive Data Point Tooltip Mock -->
+      <circle cx="350" cy="68" r="5" fill="#ffffff" stroke="#0284c7" stroke-width="3"/>
+      <rect x="306" y="32" width="88" height="24" rx="5" fill="#090e18" stroke="#0284c7" stroke-width="1"/>
+      <text x="350" y="47" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" text-anchor="middle">14,820 ev/s</text>
+    </g>
+
+    <!-- RIGHT PANEL: Live Streaming Events Feed -->
+    <g transform="translate(642, 172)">
+      <rect x="0" y="0" width="198" height="190" rx="12" fill="url(#panelBg)" stroke="#1e293b" stroke-width="1"/>
+      <text x="14" y="24" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="11.5" font-weight="700">Live Event Feed</text>
+      <text x="14" y="38" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="9">Kafka Topic: /metrics/v2</text>
+
+      <!-- Event 1 -->
+      <rect x="12" y="50" width="174" height="26" rx="6" fill="#0c111c" stroke="#1e293b" stroke-width="0.8"/>
+      <circle cx="24" cy="63" r="3" fill="#10b981"/>
+      <text x="34" y="66" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="8.5">tenant_9841: tier_sync</text>
+      <text x="178" y="66" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="end">2ms</text>
+
+      <!-- Event 2 -->
+      <rect x="12" y="82" width="174" height="26" rx="6" fill="#0c111c" stroke="#1e293b" stroke-width="0.8"/>
+      <circle cx="24" cy="95" r="3" fill="#38bdf8"/>
+      <text x="34" y="98" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="8.5">stripe.invoice.created</text>
+      <text x="178" y="98" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="end">14ms</text>
+
+      <!-- Event 3 -->
+      <rect x="12" y="114" width="174" height="26" rx="6" fill="#0c111c" stroke="#1e293b" stroke-width="0.8"/>
+      <circle cx="24" cy="127" r="3" fill="#a78bfa"/>
+      <text x="34" y="130" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="8.5">timescale.flush_batch</text>
+      <text x="178" y="130" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="end">31ms</text>
+
+      <!-- Event 4 -->
+      <rect x="12" y="146" width="174" height="26" rx="6" fill="#0c111c" stroke="#1e293b" stroke-width="0.8"/>
+      <circle cx="24" cy="159" r="3" fill="#10b981"/>
+      <text x="34" y="162" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="8.5">auth.rbac_token_ok</text>
+      <text x="178" y="162" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="end">52ms</text>
+    </g>
+
+    <!-- BOTTOM ROW: Cluster Nodes Status Table -->
+    <g transform="translate(216, 372)">
+      <rect x="0" y="0" width="624" height="136" rx="12" fill="url(#panelBg)" stroke="#1e293b" stroke-width="1"/>
+      <text x="16" y="24" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Cluster Node Health &amp; Multi-Region Load</text>
+
+      <!-- Table Header -->
+      <text x="16" y="46" fill="#64748b" font-family="system-ui, sans-serif" font-size="9" font-weight="600">NODE ID</text>
+      <text x="140" y="46" fill="#64748b" font-family="system-ui, sans-serif" font-size="9" font-weight="600">REGION</text>
+      <text x="260" y="46" fill="#64748b" font-family="system-ui, sans-serif" font-size="9" font-weight="600">CPU UTILIZATION</text>
+      <text x="400" y="46" fill="#64748b" font-family="system-ui, sans-serif" font-size="9" font-weight="600">MEMORY (RAM)</text>
+      <text x="530" y="46" fill="#64748b" font-family="system-ui, sans-serif" font-size="9" font-weight="600">STATUS</text>
+      <line x1="16" y1="52" x2="608" y2="52" stroke="#1e293b" stroke-width="1"/>
+
+      <!-- Row 1 -->
+      <text x="16" y="74" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10">node-us-east-01a</text>
+      <text x="140" y="74" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="10">N. Virginia (AWS)</text>
+      <rect x="260" y="66" width="90" height="8" rx="4" fill="#1e293b"/>
+      <rect x="260" y="66" width="38" height="8" rx="4" fill="#0284c7"/>
+      <text x="358" y="74" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">42%</text>
+      <text x="400" y="74" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="10">14.2 / 32 GB</text>
+      <rect x="530" y="63" width="64" height="16" rx="4" fill="#065f46" fill-opacity="0.3" stroke="#10b981" stroke-width="0.8"/>
+      <text x="562" y="74" fill="#34d399" font-family="system-ui, sans-serif" font-size="8.5" font-weight="700" text-anchor="middle">ONLINE</text>
+
+      <!-- Row 2 -->
+      <text x="16" y="104" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10">node-eu-west-02b</text>
+      <text x="140" y="104" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="10">Frankfurt (AWS)</text>
+      <rect x="260" y="96" width="90" height="8" rx="4" fill="#1e293b"/>
+      <rect x="260" y="96" width="56" height="8" rx="4" fill="#3b82f6"/>
+      <text x="358" y="104" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">62%</text>
+      <text x="400" y="104" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="10">18.6 / 32 GB</text>
+      <rect x="530" y="93" width="64" height="16" rx="4" fill="#065f46" fill-opacity="0.3" stroke="#10b981" stroke-width="0.8"/>
+      <text x="562" y="104" fill="#34d399" font-family="system-ui, sans-serif" font-size="8.5" font-weight="700" text-anchor="middle">ONLINE</text>
+    </g>
+  </g>
+</svg>

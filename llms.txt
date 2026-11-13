@@ -1,0 +1,34 @@
+# Thinkvistar
+
+> Thinkvistar (legal name Thinkvistar LLP; also written "Think Vistar" or "ThinkVistar") is a senior-led software development company in the Mumbai Metropolitan Region, India.
+
+Services: SaaS development company; mobile app development company; web application development company; headless CMS development; AI automation services; legacy application modernization; software maintenance and support services.
+Founded: 2026. Address: Yashwant Gaurav Phase 1, Nalasopara West, Palghar, Maharashtra 401203, India.
+Email: hello@thinkvistar.com. Phone/WhatsApp: +91 70210 67824. Website: https://thinkvistar.com/
+Works with clients across India and remotely with teams in the US, UK and Europe. Aims to reply to enquiries within one business day.
+Once the agreed payment is received, the bespoke source code, designs and database schemas built for a client become the client’s property; Thinkvistar keeps its pre-existing tools and libraries and licenses them to the client as part of the delivered work (see Terms).
+
+## Key pages
+- [Thinkvistar | Custom Software, SaaS & App Development Company](https://thinkvistar.com/): Thinkvistar is a senior-led software development company near Mumbai, India, building SaaS platforms, web and mobile apps, CMS websites and AI automation.
+- [SaaS, Web & Mobile App Development Services | Thinkvistar](https://thinkvistar.com/services/): SaaS development, web and mobile apps, headless CMS, legacy modernization, AI automation and cloud support — with typical timelines, pricing model and FAQs.
+- [Industry Software: Healthcare, Fintech, Retail | Thinkvistar](https://thinkvistar.com/industries/): How Thinkvistar builds software for healthcare, fintech, e-commerce, logistics, real estate and SaaS businesses — typical projects, data rules and integrations.
+- [Tech Stack: React, Next.js, Node.js & AWS | Thinkvistar](https://thinkvistar.com/tech-stack/): The languages, frameworks, databases and cloud tools Thinkvistar builds with — and how we choose the right stack for your product, budget and team.
+- [Our Work: Clients & Solution Blueprints | Thinkvistar](https://thinkvistar.com/projects/): The clients we work with, plus detailed solution blueprints showing how Thinkvistar approaches SaaS, headless CMS, logistics and fintech software projects.
+- [About Thinkvistar — Senior-Led Software Studio near Mumbai](https://thinkvistar.com/about/): Thinkvistar LLP is a senior-led software studio in Nalasopara West, near Mumbai. See how we work, our six-stage delivery process and our standards.
+- [Software Project Timeline Estimator | Thinkvistar](https://thinkvistar.com/estimator/): Estimate the timeline, architecture and tech stack for your SaaS, CMS, AI or custom software project in a minute — then review the result with an engineer.
+- [Contact Us & Book a Consultation | Thinkvistar](https://thinkvistar.com/contact/): Talk to our engineers about your project. Call or WhatsApp +91 70210 67824, email hello@thinkvistar.com or use the form. We aim to reply in a business day.
+- [Privacy Policy | Thinkvistar](https://thinkvistar.com/privacy/): How Thinkvistar LLP collects, uses, shares and protects personal information across its website and software services, and how to exercise your rights.
+- [Terms & Conditions | Thinkvistar](https://thinkvistar.com/terms/): The terms governing use of the Thinkvistar website and our software development services: scope, payments, intellectual property, confidentiality and support.
+- [Software Development Company in Mumbai | Thinkvistar](https://thinkvistar.com/software-development-company-mumbai/): Senior-led software development company in the Mumbai region (Nalasopara West). SaaS, web and mobile apps, websites and AI automation. Meet us in person.
+
+## Services
+- [SaaS Development Company in India | Thinkvistar](https://thinkvistar.com/services/saas-development/): SaaS product development from MVP to scale: multi-tenant architecture, subscription billing, dashboards and APIs. Senior engineers; you own the code.
+- [Mobile App Development Company in Mumbai | Thinkvistar](https://thinkvistar.com/services/mobile-app-development/): iOS and Android app development with React Native and Flutter: customer apps, field-staff apps and companion apps, launched on both app stores.
+- [Web Application Development Company | Thinkvistar](https://thinkvistar.com/services/web-application-development/): Custom web application development: customer portals, booking systems, dashboards and internal tools — fast, accessible and built on React, Next.js and Node.js.
+- [Headless CMS Development & Migration | Thinkvistar](https://thinkvistar.com/services/headless-cms-development/): Headless CMS development and WordPress migration with Strapi, Sanity or Contentful and a fast Next.js front end — editor-friendly, multilingual and SEO-safe.
+- [AI Automation & LLM Integration Services | Thinkvistar](https://thinkvistar.com/services/ai-automation/): AI automation for businesses: document extraction, AI assistants on your own data and workflow automation with OpenAI and Claude — with human review.
+- [Legacy Application Modernization Services | Thinkvistar](https://thinkvistar.com/services/legacy-application-modernization/): Modernise legacy PHP, .NET or desktop systems in stages — stabilise, migrate data and move to a modern cloud architecture without a risky big-bang rewrite.
+- [Software Maintenance & Cloud Support Services | Thinkvistar](https://thinkvistar.com/services/cloud-support-maintenance/): Software maintenance and cloud support with agreed response times: monitoring, security patching, backups, DevOps and ongoing improvements.
+
+## More detail
+- [Full text version of this site's key facts and FAQs](https://thinkvistar.com/llms-full.txt)
