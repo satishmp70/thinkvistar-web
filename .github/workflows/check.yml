@@ -111,11 +111,9 @@ jobs:
 
   # Copies the checked site straight to the server over SSH. Runs only after every check passed.
   # Settings live in GitHub → Settings → Environments → production (see DEPLOYMENT.md).
-  # Off by default: the site is deployed by Hostinger's Git deployment from the `deploy` branch.
-  # To use SSH instead, set the repository variable SSH_DEPLOY=true.
   deploy:
     needs: build
-    if: vars.SSH_DEPLOY == 'true' && (github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main'))
+    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
     runs-on: ubuntu-latest
     environment:
       name: production
