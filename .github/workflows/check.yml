@@ -81,14 +81,24 @@ jobs:
 
       - name: Publish dist/ to the deploy branch
         if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
+        # Hostinger's Git deployment runs `git pull` on this branch, so it must keep a continuous
+        # history (no force-push): check out the existing branch, replace its files with dist/, commit.
         run: |
-          cd dist
-          git init -q -b deploy
+          REPO="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          if git ls-remote --exit-code --heads "$REPO" deploy >/dev/null; then
+            git clone -q --branch deploy --single-branch "$REPO" deploy-branch
+          else
+            git init -q -b deploy deploy-branch
+          fi
+          cd deploy-branch
+          git rm -rq --ignore-unmatch .
+          cp -a ../dist/. .
           git config user.name "github-actions"
           git config user.email "actions@users.noreply.github.com"
           git add -A -f
+          if git diff --cached --quiet; then echo "deploy branch already up to date"; exit 0; fi
           git commit -q -m "Deploy ${GITHUB_SHA::7}"
-          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" deploy
+          git push "$REPO" HEAD:deploy
 
       - name: Hand the built site to the deploy job
         if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
@@ -101,9 +111,11 @@ jobs:
 
   # Copies the checked site straight to the server over SSH. Runs only after every check passed.
   # Settings live in GitHub → Settings → Environments → production (see DEPLOYMENT.md).
+  # Off by default: the site is deployed by Hostinger's Git deployment from the `deploy` branch.
+  # To use SSH instead, set the repository variable SSH_DEPLOY=true.
   deploy:
     needs: build
-    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
+    if: vars.SSH_DEPLOY == 'true' && (github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main'))
     runs-on: ubuntu-latest
     environment:
       name: production
