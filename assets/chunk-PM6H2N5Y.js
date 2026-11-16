@@ -1,0 +1,1 @@
+var t=e=>document.getElementById(e);function n(e){document.readyState==="loading"?document.addEventListener("DOMContentLoaded",e,{once:!0}):e()}var d=()=>window.__THINKVISTAR_PRERENDER__===!0,o=()=>document.documentElement.hasAttribute("data-prerendered");export{t as a,n as b,d as c,o as d};
