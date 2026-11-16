@@ -105,7 +105,7 @@ export function renderPage(page, body, { assets, data }) {
   ${SITE.verification.google ? `<meta name="google-site-verification" content="${esc(SITE.verification.google)}" />` : ''}
   ${SITE.verification.bing ? `<meta name="msvalidate.01" content="${esc(SITE.verification.bing)}" />` : ''}
   <meta name="geo.region" content="IN-MH" />
-  <meta name="geo.placename" content="Nalasopara West, Mumbai Metropolitan Region" />
+  <meta name="geo.placename" content="Nallasopara East, Mumbai Metropolitan Region" />
   <link rel="icon" href="/favicon.ico?v=2" sizes="16x16 32x32 48x48" />
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon.png?v=2" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />

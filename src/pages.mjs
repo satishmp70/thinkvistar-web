@@ -27,11 +27,11 @@ export const SITE = {
   indexNowKey: '6203a3005a68877cc6457e44f80947a0',
   ogImage: '/images/og/thinkvistar-og.png',
   address: {
-    streetAddress: 'Yashwant Gaurav Phase 1',
-    addressLocality: 'Nalasopara West',
+    streetAddress: 'D/113, Jai Manasarovar CHS Ltd, Vasai Nallasopara Link Road',
+    addressLocality: 'Nallasopara East',
     district: 'Palghar',
     addressRegion: 'Maharashtra',
-    postalCode: '401203',
+    postalCode: '401209',
     addressCountry: 'IN',
   },
 };
@@ -84,7 +84,7 @@ const FAQ_HOME = [
   ['What does Thinkvistar do?',
     'Thinkvistar is a senior-led software development company. We design, build and support SaaS platforms, web and mobile apps, headless CMS websites and AI automation — from the first architecture decision through launch and ongoing support. See our <a href="/services/">services</a> for what each engagement includes.'],
   ['Where are you based, and do you work with clients outside India?',
-    'Our office is in Nalasopara West (Palghar district), in the Mumbai Metropolitan Region, Maharashtra. We work with clients across India and remotely with teams in the US, UK and Europe, using scheduled calls in overlapping hours, weekly demos on a staging site and written progress updates.'],
+    'Our office is in Nallasopara East (Palghar district), in the Mumbai Metropolitan Region, Maharashtra. We work with clients across India and remotely with teams in the US, UK and Europe, using scheduled calls in overlapping hours, weekly demos on a staging site and written progress updates.'],
   ['How long does it take to build a SaaS product or web application?',
     'A focused first version usually takes about 4–8 weeks; larger platforms are delivered in phases over several months. The exact timeline depends on features, integrations and security requirements. Our <a href="/estimator/">project estimator</a> gives you a timeline range in about a minute, and the <a href="/services/#timelines">typical timelines table</a> shows ranges for each service.'],
   ['How much does custom software development cost?',
@@ -139,7 +139,7 @@ const FAQ_TECH = [
 
 const FAQ_MUMBAI = [
   ['Where is your office?',
-    'Our office is at Yashwant Gaurav Phase 1, Nalasopara West, Palghar, Maharashtra 401203 — in the Mumbai Metropolitan Region, on the Western Railway line. Meetings are by appointment; <a href="/contact/">contact us</a> to arrange one.'],
+    'Our office is at D/113, Jai Manasarovar CHS Ltd, Vasai Nallasopara Link Road, Nallasopara East, Palghar, Maharashtra 401209 — in the Mumbai Metropolitan Region, on the Western Railway line. Meetings are by appointment; <a href="/contact/">contact us</a> to arrange one.'],
   ['Can we meet in person?',
     'Yes. We meet clients in Mumbai, Thane and Vasai-Virar for kick-offs, workshops and demos, and run day-to-day work through calls, a shared staging site and written weekly updates.'],
   ['Do you only work with Mumbai businesses?',
@@ -189,7 +189,7 @@ export const pages = [
   {
     path: '/about/', out: 'about/index.html', body: 'about.html', sitemap: true,
     title: 'About Thinkvistar — Senior-Led Software Studio near Mumbai',
-    description: 'Thinkvistar LLP is a senior-led software studio in Nalasopara West, near Mumbai. See how we work, our six-stage delivery process and our standards.',
+    description: 'Thinkvistar LLP is a senior-led software studio in Nallasopara East, near Mumbai. See how we work, our six-stage delivery process and our standards.',
     breadcrumb: [['About', '/about/']], pageType: 'AboutPage',
   },
   {
@@ -242,7 +242,7 @@ export const pages = [
   {
     path: '/software-development-company-mumbai/', out: 'software-development-company-mumbai/index.html', body: 'mumbai.html', sitemap: true,
     title: 'Software Development Company in Mumbai | Thinkvistar',
-    description: 'Senior-led software development company in the Mumbai region (Nalasopara West). SaaS, web and mobile apps, websites and AI automation. Meet us in person.',
+    description: 'Senior-led software development company in the Mumbai region (Nallasopara East). SaaS, web and mobile apps, websites and AI automation. Meet us in person.',
     breadcrumb: [['Software Development Company in Mumbai', '/software-development-company-mumbai/']],
     faq: FAQ_MUMBAI, faqOptions: { title: 'Questions from Mumbai businesses' },
   },

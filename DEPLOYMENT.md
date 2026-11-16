@@ -149,4 +149,4 @@ An existing endpoint returns a JSON `Method not allowed` response for a normal b
 3. Google Search Console: add a **Domain property** for `thinkvistar.com` and submit `https://thinkvistar.com/sitemap.xml`.
 4. Bing Webmaster Tools: import the site from Search Console, then run `node src/indexnow.mjs`.
 5. Create or update the **Google Business Profile** with exactly the same name, address and phone as the site footer:
-   Thinkvistar LLP, Yashwant Gaurav Phase 1, Nalasopara West, Palghar, Maharashtra 401203 · +91 70210 67824.
+   Thinkvistar LLP, D/113, Jai Manasarovar CHS Ltd, Vasai Nallasopara Link Road, Nallasopara East, Palghar, Maharashtra 401209 · +91 70210 67824.

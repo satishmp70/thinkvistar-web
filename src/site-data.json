@@ -39,13 +39,13 @@
    "email": "hello@thinkvistar.com",
    "phone": "+91 70210 67824",
    "whatsapp": "+917021067824",
-   "location": "Nalasopara West, Mumbai Region",
+   "location": "Nallasopara East, Mumbai Region",
    "availability": "Available for Q4 2026 engagements",
    "form": {
     "endpoint": "/api/contact.php",
     "subject": "New Contact Form Enquiry"
    },
-   "address": "Yashwant Gaurav Phase 1, Nalasopara West, Palghar, Maharashtra 401203, India"
+   "address": "D/113, Jai Manasarovar CHS Ltd, Vasai Nallasopara Link Road, Nallasopara East, Palghar, Maharashtra 401209, India"
   },
   "socialLinks": {
    "linkedin": "https://www.linkedin.com/company/thinkvistar",
@@ -840,7 +840,7 @@
   "headline": "Engineering‑first, from day one.",
   "lead": "We work with founders and growing businesses to turn product ideas and manual processes into reliable, well-built software.",
   "paragraphs": [
-   "Thinkvistar LLP was founded in 2026 in Nalasopara West, in the Mumbai Metropolitan Region, with an engineering-first mindset: every technical decision should map to a business outcome, and every system should be easy for your team to own after we hand it over.",
+   "Thinkvistar LLP was founded in 2026 in Nallasopara East, in the Mumbai Metropolitan Region, with an engineering-first mindset: every technical decision should map to a business outcome, and every system should be easy for your team to own after we hand it over.",
    "Whether you are launching a multi-tenant SaaS product, moving to a headless CMS, modernising an ageing system or automating document-heavy work, you work directly with the senior engineers who design and build it — with weekly demos, written updates and no account-manager layer in between.",
    "We work with clients across India and remotely with teams in the US, UK and Europe. Our current clients include healthcare and home-care providers such as Viora Healthcare, Viva Homecare and The Walk."
   ],
@@ -894,7 +894,7 @@
    },
    "location": {
     "label": "Office",
-    "value": "Yashwant Gaurav Phase 1, Nalasopara West, Palghar, Maharashtra 401203",
+    "value": "D/113, Jai Manasarovar CHS Ltd, Vasai Nallasopara Link Road, Nallasopara East, Palghar, Maharashtra 401209",
     "hint": "Working with clients across India, the US, UK & Europe"
    }
   }
@@ -906,7 +906,7 @@
   "sections": [
    {
     "title": "1. About These Terms",
-    "content": "These Terms and Conditions are in two parts. Part A (section 2) governs your use of this website. Part B (sections 3 to 24) are Thinkvistar LLP's standard terms for consulting, software development and related services (the “Services”). Part B applies to every engagement unless a Master Services Agreement or Statement of Work signed by both parties expressly replaces it. “Thinkvistar”, “we”, “us” and “our” mean Thinkvistar LLP, Yashwant Gaurav Phase 1, Nalasopara West, Maharashtra, India. “Client” and “you” mean the person or organisation that engages us. If you accept on behalf of an organisation, you confirm that you have authority to bind it."
+    "content": "These Terms and Conditions are in two parts. Part A (section 2) governs your use of this website. Part B (sections 3 to 24) are Thinkvistar LLP's standard terms for consulting, software development and related services (the “Services”). Part B applies to every engagement unless a Master Services Agreement or Statement of Work signed by both parties expressly replaces it. “Thinkvistar”, “we”, “us” and “our” mean Thinkvistar LLP, D/113, Jai Manasarovar CHS Ltd, Vasai Nallasopara Link Road, Nallasopara East, Maharashtra, India. “Client” and “you” mean the person or organisation that engages us. If you accept on behalf of an organisation, you confirm that you have authority to bind it."
    },
    {
     "title": "2. Using This Website",
@@ -1121,7 +1121,7 @@
    },
    {
     "title": "24. Changes to These Terms & Contact",
-    "content": "We may update these Terms from time to time. Updates to Part A apply from the date they are posted with a revised “Last Updated” date. Updates to Part B apply to SOWs made after that date; they do not change an SOW that has already been accepted unless the Client agrees in writing. For questions about these Terms, to report a problem, or to request a tailored Master Services Agreement, contact us at hello@thinkvistar.com or write to Thinkvistar LLP, Yashwant Gaurav Phase 1, Nalasopara West, Maharashtra, India."
+    "content": "We may update these Terms from time to time. Updates to Part A apply from the date they are posted with a revised “Last Updated” date. Updates to Part B apply to SOWs made after that date; they do not change an SOW that has already been accepted unless the Client agrees in writing. For questions about these Terms, to report a problem, or to request a tailored Master Services Agreement, contact us at hello@thinkvistar.com or write to Thinkvistar LLP, D/113, Jai Manasarovar CHS Ltd, Vasai Nallasopara Link Road, Nallasopara East, Maharashtra, India."
    }
   ]
  },
@@ -1221,7 +1221,7 @@
    },
    {
     "title": "15. Grievance Officer & Contact",
-    "content": "In accordance with the Information Technology Act, 2000 and the rules made under it, if you have questions, concerns or complaints about this Policy or the handling of your Personal Information, contact the Grievance Officer of Thinkvistar LLP at hello@thinkvistar.com, or write to Thinkvistar LLP, Yashwant Gaurav Phase 1, Nalasopara West, Maharashtra, India. We aim to acknowledge grievances within two (2) working days and to resolve them within thirty (30) days, or within the period the law requires. If your grievance is not resolved you may approach the Data Protection Board of India or another competent authority, as the law allows."
+    "content": "In accordance with the Information Technology Act, 2000 and the rules made under it, if you have questions, concerns or complaints about this Policy or the handling of your Personal Information, contact the Grievance Officer of Thinkvistar LLP at hello@thinkvistar.com, or write to Thinkvistar LLP, D/113, Jai Manasarovar CHS Ltd, Vasai Nallasopara Link Road, Nallasopara East, Maharashtra, India. We aim to acknowledge grievances within two (2) working days and to resolve them within thirty (30) days, or within the period the law requires. If your grievance is not resolved you may approach the Data Protection Board of India or another competent authority, as the law allows."
    }
   ]
  },
