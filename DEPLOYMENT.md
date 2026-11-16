@@ -26,8 +26,9 @@ ssh-keygen -t ed25519 -C "github-deploy-thinkvistar" -f ~/.ssh/thinkvistar_deplo
 - Public key: hPanel → SSH Access → **SSH keys → Add SSH key**, paste `~/.ssh/thinkvistar_deploy.pub`.
   (VPS: append it to `~/.ssh/authorized_keys` of the deploy user.)
 - Test it: `ssh -i ~/.ssh/thinkvistar_deploy -p 65002 uXXXXXXX@SERVER_IP 'pwd; ls; which rsync'`
-- Find the web root while logged in. Usually `/home/uXXXXXXX/domains/thinkvistar.com/public_html`
-  (older accounts: `/home/uXXXXXXX/public_html`).
+- Find the web root while logged in: `/home/uXXXXXXX/domains/thinkvistar.com/public_html`.
+  The deploy refuses any other path (including `/home/uXXXXXXX/public_html`, symlinks pointing
+  elsewhere, and a `SITE_URL` that is not thinkvistar.com), so other sites on the account are never touched.
 
 ### 3. Record the server's host key
 
@@ -50,7 +51,7 @@ Under **Environment secrets** add:
 | `SSH_USER`        | `uXXXXXXX`                                                    |
 | `SSH_PRIVATE_KEY` | full contents of `~/.ssh/thinkvistar_deploy` (private key)    |
 | `SSH_KNOWN_HOSTS` | output of step 3                                              |
-| `DEPLOY_PATH`     | the web root from step 2, must end in `public_html`           |
+| `DEPLOY_PATH`     | exactly `/home/<user>/domains/thinkvistar.com/public_html`    |
 
 Optional *Environment variable* `SITE_URL` (default `https://thinkvistar.com`) for the smoke test.
 

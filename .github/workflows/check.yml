@@ -135,9 +135,16 @@ jobs:
             echo "::error::Missing secrets in the 'production' environment:$missing"
             exit 1
           fi
-          case "$DEPLOY_PATH" in
-            */public_html|*/public_html/|/var/www/*) ;;
-            *) echo "::error::DEPLOY_PATH '$DEPLOY_PATH' does not look like a web root; refusing to sync with --delete"; exit 1 ;;
+          # Only ever deploy into thinkvistar.com's own web root, so other sites on the same
+          # hosting account can never be touched.
+          # Exactly /home/<user>/domains/thinkvistar.com/public_html (one path segment for <user>).
+          if ! [[ "$DEPLOY_PATH" =~ ^/home/[A-Za-z0-9._-]+/domains/thinkvistar\.com/public_html/?$ ]] || [[ "$DEPLOY_PATH" == *..* ]]; then
+            echo "::error::DEPLOY_PATH '$DEPLOY_PATH' is not /home/<user>/domains/thinkvistar.com/public_html; refusing to deploy"
+            exit 1
+          fi
+          case "${{ vars.SITE_URL || 'https://thinkvistar.com' }}" in
+            https://thinkvistar.com|https://thinkvistar.com/|https://www.thinkvistar.com|https://www.thinkvistar.com/) ;;
+            *) echo "::error::SITE_URL must be https://thinkvistar.com"; exit 1 ;;
           esac
           test -f site/index.html && test -f site/.htaccess && test -f site/vendor/autoload.php
 
@@ -151,6 +158,24 @@ jobs:
           chmod 600 ~/.ssh/deploy_key
           printf '%s\n' "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
+
+      - name: Confirm the target folder on the server is thinkvistar.com's
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_PORT: ${{ secrets.SSH_PORT || '22' }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+        run: |
+          # Resolve symlinks on the server: refuses if public_html is (or sits under) a link
+          # pointing at another domain's folder, or does not exist.
+          real=$(ssh -i ~/.ssh/deploy_key -p "$SSH_PORT" -o BatchMode=yes -o StrictHostKeyChecking=yes \
+            "$SSH_USER@$SSH_HOST" "readlink -e '${DEPLOY_PATH%/}'") || { echo "::error::DEPLOY_PATH does not exist on the server"; exit 1; }
+          echo "Server path resolves to: $real"
+          if ! [[ "$real" =~ ^/home/[A-Za-z0-9._-]+/domains/thinkvistar\.com/public_html$ ]]; then
+            echo "::error::DEPLOY_PATH resolves to '$real', not thinkvistar.com's public_html; refusing to deploy"
+            exit 1
+          fi
+          echo "REAL_DEPLOY_PATH=$real" >> "$GITHUB_ENV"
 
       - name: Upload to server (rsync)
         env:
@@ -167,7 +192,7 @@ jobs:
             --exclude='/.well-known/' --exclude='/.git/' \
             --exclude='/.user.ini' --exclude='/php.ini' \
             -e "ssh -i ~/.ssh/deploy_key -p $SSH_PORT -o BatchMode=yes -o StrictHostKeyChecking=yes" \
-            site/ "$SSH_USER@$SSH_HOST:${DEPLOY_PATH%/}/"
+            site/ "$SSH_USER@$SSH_HOST:$REAL_DEPLOY_PATH/"
 
       - name: Smoke test the live site
         env:
