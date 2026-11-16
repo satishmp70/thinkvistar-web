@@ -9,7 +9,7 @@ Nothing below has been approved. Tick items only when the named person has actua
 - [ ] Legal name, LLPIN and registered office of Thinkvistar LLP match the incorporation documents; "founded in 2026" is correct
 - [ ] Whether the website must or should show LLPIN / GSTIN / registered office (ask counsel; not established here)
 - [ ] Written permission from **Viora Healthcare, Viva Homecare and The Walk** to show their names, logos and links, and to say "Trusted by…" (or change to "Our clients include")
-- [ ] Each team member (Rahul Dubey, Satish Mishra, Chandan Yadav) consents to the published mobile number and LinkedIn link
+- [ ] Satish Mishra consents to the published mobile number and LinkedIn link
 - [ ] "Senior-led / senior engineers / principal engineers": define what "senior" means and confirm it is true for every engagement, or change the wording
 - [ ] Weekly demos, written updates, "no account-manager layer" and the "30-minute architecture review" are really practised
 - [ ] The 30-day warranty is actually honoured for every project in the way the Terms describe

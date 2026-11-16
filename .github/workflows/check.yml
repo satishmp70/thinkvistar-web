@@ -1,7 +1,7 @@
 name: build-and-deploy
 
 # Every push is built and fully checked. Pushes to main (or a manual run) also publish
-# the finished site to the `deploy` branch, which Hostinger pulls into public_html.
+# the finished site to the `deploy` branch and rsyncs it to the server over SSH (job: deploy).
 on:
   push:
   pull_request:
@@ -89,3 +89,97 @@ jobs:
           git add -A -f
           git commit -q -m "Deploy ${GITHUB_SHA::7}"
           git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" deploy
+
+      - name: Hand the built site to the deploy job
+        if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: dist
+          include-hidden-files: true   # keeps .htaccess
+          retention-days: 7
+
+  # Copies the checked site straight to the server over SSH. Runs only after every check passed.
+  # Settings live in GitHub → Settings → Environments → production (see DEPLOYMENT.md).
+  deploy:
+    needs: build
+    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: ${{ vars.SITE_URL || 'https://thinkvistar.com' }}
+    concurrency:
+      group: production-deploy
+      cancel-in-progress: false
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: site
+
+      - name: Check deploy settings
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+        run: |
+          missing=""
+          for v in SSH_HOST SSH_USER SSH_PRIVATE_KEY SSH_KNOWN_HOSTS DEPLOY_PATH; do
+            [ -n "${!v}" ] || missing="$missing $v"
+          done
+          if [ -n "$missing" ]; then
+            echo "::error::Missing secrets in the 'production' environment:$missing"
+            exit 1
+          fi
+          case "$DEPLOY_PATH" in
+            */public_html|*/public_html/|/var/www/*) ;;
+            *) echo "::error::DEPLOY_PATH '$DEPLOY_PATH' does not look like a web root; refusing to sync with --delete"; exit 1 ;;
+          esac
+          test -f site/index.html && test -f site/.htaccess && test -f site/vendor/autoload.php
+
+      - name: Set up SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          printf '%s\n' "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+
+      - name: Upload to server (rsync)
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_PORT: ${{ secrets.SSH_PORT || '22' }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+        run: |
+          # --delete removes files that no longer exist in the build, but the excluded paths are
+          # never touched: the secrets file, SSL validation files and any old git checkout.
+          rsync -rlptz --checksum --delete-after --delay-updates \
+            --chmod=D755,F644 \
+            --exclude='/.env' --exclude='/api/.env' \
+            --exclude='/.well-known/' --exclude='/.git/' \
+            --exclude='/.user.ini' --exclude='/php.ini' \
+            -e "ssh -i ~/.ssh/deploy_key -p $SSH_PORT -o BatchMode=yes -o StrictHostKeyChecking=yes" \
+            site/ "$SSH_USER@$SSH_HOST:${DEPLOY_PATH%/}/"
+
+      - name: Smoke test the live site
+        env:
+          SITE_URL: ${{ vars.SITE_URL || 'https://thinkvistar.com' }}
+        run: |
+          sleep 5
+          home=$(curl -s -o /dev/null -w '%{http_code}' "$SITE_URL/")
+          api=$(curl -s -o /dev/null -w '%{http_code}' "$SITE_URL/api/contact.php")
+          echo "Home page: $home   Contact endpoint (GET): $api"
+          [ "$home" = "200" ] || { echo "::error::Home page returned $home"; exit 1; }
+          [ "$api" = "405" ] || { echo "::error::/api/contact.php returned $api (expected 405 Method not allowed)"; exit 1; }
+
+      - name: Remove key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key

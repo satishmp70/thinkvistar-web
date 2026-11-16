@@ -105,7 +105,7 @@ These are deliberately separate from the results above. None was attempted.
 ## Owner-supplied facts still required
 
 - **AUD-018 (client case narrative).** Written client permission; for each case: client name as they want it shown, the problem and scope, what Thinkvistar delivered and when, constraints, technologies actually used, and outcomes the client approves for publication (with how they were measured). Optional: approved logo/screenshots. Until then the four items stay labelled "Sample blueprint".
-- **AUD-019 (team expertise).** Profile links are done. Still needed for each of Rahul Dubey, Satish Mishra and Chandan Yadav: the role/title to publish and a two-to-three sentence factual bio (relevant experience, areas they lead). Add them as `role` and `bio` in `team` in `src/site-data.json`; no code change is needed. `Person` structured data was not added because it would need these same facts.
+- **AUD-019 (team expertise).** Profile links are done. Still needed for Satish Mishra: the role/title to publish and a two-to-three sentence factual bio (relevant experience, areas they lead). Add them as `role` and `bio` in `team` in `src/site-data.json`; no code change is needed. `Person` structured data was not added because it would need these same facts.
 - **AUD-022 wording.** Engineering and commercial owner approval of the new "indicative target / aligned controls / assessed separately" wording.
 - **AUD-023.** Brand-owner sign-off that the 240/360 px logo files look right.
 

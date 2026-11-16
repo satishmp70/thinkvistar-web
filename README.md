@@ -51,7 +51,7 @@ JavaScript source (`src/js/`) uses plain, stable ES module imports and is bundle
 
 ## Deploy
 
-`deploy.bat` (or just `git push` to `main`). CI does the rest. See `DEPLOYMENT.md` for one-time server setup.
+Push to `main`; CI builds, checks and deploys. To run the same checks locally first: `cd src && npm run build && npm test`. See `DEPLOYMENT.md` for one-time server setup.
 
 ## Security notes
 

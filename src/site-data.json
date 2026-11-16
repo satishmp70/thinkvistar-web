@@ -1295,19 +1295,6 @@
  },
  "team": [
   {
-   "name": "Rahul Dubey",
-   "phone": "+91 98909 32123",
-   "whatsapp": "919890932123",
-   "role": "",
-   "bio": "",
-   "profiles": [
-    {
-     "label": "LinkedIn",
-     "url": "https://www.linkedin.com/in/rahul-dubey-20/"
-    }
-   ]
-  },
-  {
    "name": "Satish Mishra",
    "phone": "+91 70210 67824",
    "whatsapp": "917021067824",
@@ -1317,19 +1304,6 @@
     {
      "label": "LinkedIn",
      "url": "https://www.linkedin.com/in/satish-mishra-b808381bb/"
-    }
-   ]
-  },
-  {
-   "name": "Chandan Yadav",
-   "phone": "+91 97635 80509",
-   "whatsapp": "919763580509",
-   "role": "",
-   "bio": "",
-   "profiles": [
-    {
-     "label": "LinkedIn",
-     "url": "https://www.linkedin.com/in/chandan-yadav-8731121b8/"
     }
    ]
   }

@@ -548,7 +548,7 @@ Paths are relative to the repository root. Line numbers refer to the audited sou
 - **Exact references:** src/pages/about.html:34
 - **Status / verification:** Open / Confirmed.
 
-**Evidence:** Team cards identify Rahul Dubey, Satish Mishra and Chandan Yadav with phone/WhatsApp links; they do not describe their roles, experience, delivery responsibilities or professional profiles.
+**Evidence:** The team card identifies Satish Mishra with phone/WhatsApp links; it does not describe the role, experience, delivery responsibilities or professional profiles.
 
 **Steps to reproduce:** Read /about/#team and its source; compare the senior-led proposition with the evidence actually supplied.
 

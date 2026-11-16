@@ -3,7 +3,7 @@
 | Area | Change | Files |
 |---|---|---|
 | Source recovery | Restored build source; layout is now `src/` (source), `static/` (images, fonts, api, robots, .htaccess), `dist/` (generated, git-ignored) | `src/`, `static/`, `.gitignore`, `.gitattributes` |
-| Deploy | CI builds, verifies, runs Lighthouse, adds PHPMailer, publishes `dist/` to `deploy` branch; server needs no Node/Composer | `.github/workflows/check.yml`, `deploy.bat`, `DEPLOYMENT.md` |
+| Deploy | CI builds, verifies, runs Lighthouse, adds PHPMailer, publishes `dist/` to `deploy` branch; server needs no Node/Composer | `.github/workflows/check.yml`, `DEPLOYMENT.md` |
 | Crawl control | `robots.txt` allows search + AI crawlers explicitly, blocks only `/api/`; removed stale `/_src/` rule | `static/robots.txt` |
 | AI discoverability | `/llms.txt`, `/llms-full.txt` generated from page data and FAQs (experimental, not a ranking factor) | `src/llms.mjs`, `src/build.mjs` |
 | Entity/brand | Organization: alternateName variants, `Brand`, `disambiguatingDescription`, `knowsLanguage`; WebPage `dateModified`, `inLanguage: en-IN` | `src/pages.mjs`, `src/layout.mjs` |

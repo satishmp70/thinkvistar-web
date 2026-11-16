@@ -1,19 +1,82 @@
 # Deployment Guide
 
-GitHub Actions builds the site from `src/` + `static/`, runs the SEO and link checks, adds PHPMailer
-(`vendor/`) and publishes the finished files to the **`deploy`** branch. Hostinger pulls that branch into
-`public_html`. The server needs no Node, no Composer and no source code.
+Every push to `main` (or *Run workflow* in the Actions tab) runs `.github/workflows/check.yml`:
 
-## One-time switch (in this order, no downtime)
+1. **build**: builds the site from `src/` + `static/`, runs every check (SEO, links, browser, contact
+   endpoint, Lighthouse), adds PHPMailer (`vendor/`) and keeps a copy of the output on the `deploy` branch.
+2. **deploy**: only if every check passed, copies the output to the server's `public_html` over SSH
+   (`rsync`), then checks that `/` returns 200 and `/api/contact.php` returns 405.
 
-1. Push this work to a branch other than `main` (for example `restructure`).
-2. GitHub → Actions → **build-and-deploy** → *Run workflow* on that branch. It creates the `deploy` branch.
-3. Create `/home/uXXXX/.env` on the server from `.env.example` (outside `public_html`). Use a NEW mailbox password.
-4. Hostinger hPanel → Git → set the branch to `deploy` (directory `public_html`) and deploy.
-5. Check https://thinkvistar.com/ and send one test enquiry from `/contact/`.
-6. Only now merge the branch into `main`. From then on every push to `main` redeploys automatically.
+The server needs no Node, no Composer and no source code. `rsync --delete` removes files that are no longer
+built, but never touches `.env`, `api/.env`, `.well-known/`, `.git/`, `.user.ini` or `php.ini`.
 
-If a step fails, point Hostinger back at the old branch; nothing is lost.
+## One-time setup
+
+### 1. Turn on SSH (Hostinger)
+
+hPanel → **Advanced → SSH Access** → *Enable*. Note the **IP**, **port** (Hostinger uses `65002`) and
+**username** (`uXXXXXXX`). On a VPS, use your server's IP, port `22` and a deploy user.
+
+### 2. Create a deploy key (on your own computer)
+
+```bash
+ssh-keygen -t ed25519 -C "github-deploy-thinkvistar" -f ~/.ssh/thinkvistar_deploy -N ""
+```
+
+- Public key: hPanel → SSH Access → **SSH keys → Add SSH key**, paste `~/.ssh/thinkvistar_deploy.pub`.
+  (VPS: append it to `~/.ssh/authorized_keys` of the deploy user.)
+- Test it: `ssh -i ~/.ssh/thinkvistar_deploy -p 65002 uXXXXXXX@SERVER_IP 'pwd; ls; which rsync'`
+- Find the web root while logged in. Usually `/home/uXXXXXXX/domains/thinkvistar.com/public_html`
+  (older accounts: `/home/uXXXXXXX/public_html`).
+
+### 3. Record the server's host key
+
+```bash
+ssh-keyscan -p 65002 SERVER_IP
+```
+
+Copy all the lines it prints (needed so the workflow refuses to connect to an impostor server).
+
+### 4. Add the secrets in GitHub
+
+Repository → **Settings → Environments → New environment** → name it `production`.
+Optionally restrict *Deployment branches* to `main`, or add yourself as a *Required reviewer* to approve each deploy.
+Under **Environment secrets** add:
+
+| Secret            | Value                                                         |
+|-------------------|---------------------------------------------------------------|
+| `SSH_HOST`        | server IP, e.g. `153.92.x.x`                                  |
+| `SSH_PORT`        | `65002` (Hostinger) or `22`                                   |
+| `SSH_USER`        | `uXXXXXXX`                                                    |
+| `SSH_PRIVATE_KEY` | full contents of `~/.ssh/thinkvistar_deploy` (private key)    |
+| `SSH_KNOWN_HOSTS` | output of step 3                                              |
+| `DEPLOY_PATH`     | the web root from step 2, must end in `public_html`           |
+
+Optional *Environment variable* `SITE_URL` (default `https://thinkvistar.com`) for the smoke test.
+
+### 5. Put `.env` on the server (once)
+
+`config.php` reads `.env` from the folder that **contains** `public_html` (outside the web root).
+Fill it from `.env.example` with a NEW mailbox password, then upload it next to `public_html`:
+
+```bash
+# web root /home/uXXXXXXX/domains/thinkvistar.com/public_html  ->  .env goes in domains/thinkvistar.com/
+scp -i ~/.ssh/thinkvistar_deploy -P 65002 .env uXXXXXXX@SERVER_IP:domains/thinkvistar.com/.env
+# web root /home/uXXXXXXX/public_html  ->  .env goes in the home folder
+# scp -i ~/.ssh/thinkvistar_deploy -P 65002 .env uXXXXXXX@SERVER_IP:.env
+```
+
+### 6. Stop the old Hostinger Git deployment
+
+hPanel → **Advanced → Git**: delete the auto-deploy / webhook for this repository, so two deployments don't
+write to `public_html` at once. (The `deploy` branch is still kept on GitHub as a history of what was live.)
+
+### 7. First deploy
+
+GitHub → **Actions → build-and-deploy → Run workflow** (branch `main`). When it is green, open the site and
+send one test enquiry from `/contact/`. From now on every push to `main` deploys automatically.
+
+**Rollback:** Actions → open the last good run on `main` → *Re-run all jobs*. That rebuilds and redeploys that commit.
 
 ## Form endpoint settings (`.env`, outside `public_html`)
 
