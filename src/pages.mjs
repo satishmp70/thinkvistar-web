@@ -64,7 +64,12 @@ export function organizationNode(data) {
       postalCode: a.postalCode,
       addressCountry: a.addressCountry,
     },
-    areaServed: [{ '@type': 'Country', name: 'India' }, { '@type': 'Place', name: 'Worldwide' }],
+    hasMap: 'https://www.google.com/maps/search/?api=1&query=D%2F113+Jai+Manasarovar+CHS+Vasai+Nallasopara+Link+Road+Nallasopara+East+401209',
+    areaServed: [
+      { '@type': 'City', name: 'Nallasopara' }, { '@type': 'City', name: 'Vasai-Virar' },
+      { '@type': 'AdministrativeArea', name: 'Palghar district' }, { '@type': 'City', name: 'Thane' },
+      { '@type': 'City', name: 'Mumbai' }, { '@type': 'Country', name: 'India' }, { '@type': 'Place', name: 'Worldwide' },
+    ],
     contactPoint: [{
       '@type': 'ContactPoint', contactType: 'sales', email: c.contact.email, telephone: '+917021067824',
       areaServed: 'Worldwide', availableLanguage: ['English'],
